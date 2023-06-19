@@ -1,0 +1,107 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 5c4ed951-5674-406c-8bab-ae3e3237b79b)
+
+  (paper "B")
+
+  (title_block
+    (title "High Altitude Balloon Payload - Cover Sheet")
+    (date "2023-06-18")
+    (rev "1.0")
+    (company "© 2023 Adam Cordingley")
+    (comment 1 "http://acordingley.us")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 76.2 38.1) (size 50.8 50.8) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 5c1aaf52-29f1-4510-8945-25db72c84267)
+    (property "Sheetname" "Power" (at 76.2 37.3884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 76.2 89.4846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Weather_Balloon_Payload_HW"
+        (path "/5c4ed951-5674-406c-8bab-ae3e3237b79b" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 190.5 114.3) (size 50.8 50.8) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 7518f41b-5c0d-4c59-b494-678674f8b2a3)
+    (property "Sheetname" "Transmitter" (at 190.5 113.5884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "transmitter.kicad_sch" (at 190.5 165.6846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Weather_Balloon_Payload_HW"
+        (path "/5c4ed951-5674-406c-8bab-ae3e3237b79b" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 152.4 38.1) (size 50.8 50.8) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid aba2900f-3f29-480d-bd2f-eda335f8728f)
+    (property "Sheetname" "GPS and Barometer" (at 152.4 37.3884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "GPS_and_Barometer.kicad_sch" (at 152.4 89.4846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Weather_Balloon_Payload_HW"
+        (path "/5c4ed951-5674-406c-8bab-ae3e3237b79b" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 114.3 114.3) (size 50.8 50.8) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid d25c89f3-6f65-404d-b20b-3f5c88d9a813)
+    (property "Sheetname" "LO Generator" (at 114.3 113.5884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "LO_gen.kicad_sch" (at 114.3 165.6846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Weather_Balloon_Payload_HW"
+        (path "/5c4ed951-5674-406c-8bab-ae3e3237b79b" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 228.6 38.1) (size 50.8 50.8) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid f83fd516-1a4d-4b5e-9499-2c791d3fffe0)
+    (property "Sheetname" "Microcontroller" (at 228.6 37.3884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "microcontroller.kicad_sch" (at 228.6 89.4846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Weather_Balloon_Payload_HW"
+        (path "/5c4ed951-5674-406c-8bab-ae3e3237b79b" (page "4"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

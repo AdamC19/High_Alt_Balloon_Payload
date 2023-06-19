@@ -4,7 +4,7 @@ These are the source files for my high-altitude balloon payload. The primary goa
     * GPS Location
     * Barometric pressure (second determination of altitude)
     * Temperature.
-* Telemeter the data via the Amatuer Radio 1.25m band.
+* Telemeter the data via the Amatuer Radio 2m band (144.39MHz).
 * Log the data to non-volatile storage.
 * Powered from NiMH batteries.
 
@@ -17,5 +17,5 @@ The primary goal of the real-time telemetry is to be able to receive GPS coordin
 ### Power Architecture
 ![High Altitude Balloon Payload Power Block Diagram](./imgs/weather_balloon_block_diag-Power.png)
 
-### 1.25m Radio Transmitter
+### 2m Radio Transmitter
 ![High Altitude Balloon Payload Radio Block Diagram](./imgs/weather_balloon_block_diag-Radio.png)

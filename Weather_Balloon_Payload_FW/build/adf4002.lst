@@ -1,0 +1,687 @@
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"adf4002.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/adf4002.c"
+  20              		.section	.text.adf_init_mem,"ax",%progbits
+  21              		.align	1
+  22              		.global	adf_init_mem
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	adf_init_mem:
+  28              	.LVL0:
+  29              	.LFB123:
+   1:Core/Src/adf4002.c **** #include "adf4002.h"
+   2:Core/Src/adf4002.c **** 
+   3:Core/Src/adf4002.c **** 
+   4:Core/Src/adf4002.c **** void adf_init_mem(ADF4002_t* adf){
+  30              		.loc 1 4 34 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+   5:Core/Src/adf4002.c ****     adf->latches[R_COUNTER_LATCH_IND] = R_COUNTER_INIT_VAL;
+  35              		.loc 1 5 5 view .LVU1
+  36              		.loc 1 5 39 is_stmt 0 view .LVU2
+  37 0000 044B     		ldr	r3, .L2
+  38 0002 4361     		str	r3, [r0, #20]
+   6:Core/Src/adf4002.c ****     adf->latches[N_COUNTER_LATCH_IND] = N_COUNTER_INIT_VAL;
+  39              		.loc 1 6 5 is_stmt 1 view .LVU3
+  40              		.loc 1 6 39 is_stmt 0 view .LVU4
+  41 0004 40F20113 		movw	r3, #257
+  42 0008 8361     		str	r3, [r0, #24]
+   7:Core/Src/adf4002.c ****     adf->latches[FUNCTION_LATCH_IND] = FUNCTION_LATCH_INIT_VAL;
+  43              		.loc 1 7 5 is_stmt 1 view .LVU5
+  44              		.loc 1 7 38 is_stmt 0 view .LVU6
+  45 000a 034B     		ldr	r3, .L2+4
+  46 000c C361     		str	r3, [r0, #28]
+   8:Core/Src/adf4002.c ****     adf->latches[INIT_LATCH_IND] = INIT_LATCH_INIT_VAL;
+  47              		.loc 1 8 5 is_stmt 1 view .LVU7
+  48              		.loc 1 8 34 is_stmt 0 view .LVU8
+  49 000e 1323     		movs	r3, #19
+  50 0010 0362     		str	r3, [r0, #32]
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 2
+
+
+   9:Core/Src/adf4002.c **** }
+  51              		.loc 1 9 1 view .LVU9
+  52 0012 7047     		bx	lr
+  53              	.L3:
+  54              		.align	2
+  55              	.L2:
+  56 0014 04000200 		.word	131076
+  57 0018 C2801F00 		.word	2064578
+  58              		.cfi_endproc
+  59              	.LFE123:
+  61              		.section	.text.adf_enable_chip,"ax",%progbits
+  62              		.align	1
+  63              		.global	adf_enable_chip
+  64              		.syntax unified
+  65              		.thumb
+  66              		.thumb_func
+  68              	adf_enable_chip:
+  69              	.LVL1:
+  70              	.LFB125:
+  10:Core/Src/adf4002.c **** 
+  11:Core/Src/adf4002.c **** void adf_init_chip(ADF4002_t* adf){
+  12:Core/Src/adf4002.c ****     adf_disable_chip(adf);
+  13:Core/Src/adf4002.c ****     HAL_GPIO_WritePin(adf->le_port, adf->le_pin, 1);
+  14:Core/Src/adf4002.c ****     
+  15:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+  16:Core/Src/adf4002.c ****     adf_write_latch(adf, FUNCTION_LATCH_IND);
+  17:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+  18:Core/Src/adf4002.c ****     adf_write_latch(adf, R_COUNTER_LATCH_IND);
+  19:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+  20:Core/Src/adf4002.c ****     adf_write_latch(adf, N_COUNTER_LATCH_IND);
+  21:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+  22:Core/Src/adf4002.c ****     adf_enable_chip(adf);
+  23:Core/Src/adf4002.c **** }
+  24:Core/Src/adf4002.c **** 
+  25:Core/Src/adf4002.c **** void adf_enable_chip(ADF4002_t* adf){
+  71              		.loc 1 25 37 is_stmt 1 view -0
+  72              		.cfi_startproc
+  73              		@ args = 0, pretend = 0, frame = 0
+  74              		@ frame_needed = 0, uses_anonymous_args = 0
+  75              		.loc 1 25 37 is_stmt 0 view .LVU11
+  76 0000 08B5     		push	{r3, lr}
+  77              		.cfi_def_cfa_offset 8
+  78              		.cfi_offset 3, -8
+  79              		.cfi_offset 14, -4
+  26:Core/Src/adf4002.c ****     HAL_GPIO_WritePin(adf->ce_port, adf->ce_pin, 1);
+  80              		.loc 1 26 5 is_stmt 1 view .LVU12
+  81 0002 0122     		movs	r2, #1
+  82 0004 018A     		ldrh	r1, [r0, #16]
+  83 0006 C068     		ldr	r0, [r0, #12]
+  84              	.LVL2:
+  85              		.loc 1 26 5 is_stmt 0 view .LVU13
+  86 0008 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  87              	.LVL3:
+  27:Core/Src/adf4002.c **** }
+  88              		.loc 1 27 1 view .LVU14
+  89 000c 08BD     		pop	{r3, pc}
+  90              		.cfi_endproc
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 3
+
+
+  91              	.LFE125:
+  93              		.section	.text.adf_disable_chip,"ax",%progbits
+  94              		.align	1
+  95              		.global	adf_disable_chip
+  96              		.syntax unified
+  97              		.thumb
+  98              		.thumb_func
+ 100              	adf_disable_chip:
+ 101              	.LVL4:
+ 102              	.LFB126:
+  28:Core/Src/adf4002.c **** void adf_disable_chip(ADF4002_t* adf){
+ 103              		.loc 1 28 38 is_stmt 1 view -0
+ 104              		.cfi_startproc
+ 105              		@ args = 0, pretend = 0, frame = 0
+ 106              		@ frame_needed = 0, uses_anonymous_args = 0
+ 107              		.loc 1 28 38 is_stmt 0 view .LVU16
+ 108 0000 08B5     		push	{r3, lr}
+ 109              		.cfi_def_cfa_offset 8
+ 110              		.cfi_offset 3, -8
+ 111              		.cfi_offset 14, -4
+  29:Core/Src/adf4002.c ****     HAL_GPIO_WritePin(adf->ce_port, adf->ce_pin, 0);
+ 112              		.loc 1 29 5 is_stmt 1 view .LVU17
+ 113 0002 0022     		movs	r2, #0
+ 114 0004 018A     		ldrh	r1, [r0, #16]
+ 115 0006 C068     		ldr	r0, [r0, #12]
+ 116              	.LVL5:
+ 117              		.loc 1 29 5 is_stmt 0 view .LVU18
+ 118 0008 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 119              	.LVL6:
+  30:Core/Src/adf4002.c **** }
+ 120              		.loc 1 30 1 view .LVU19
+ 121 000c 08BD     		pop	{r3, pc}
+ 122              		.cfi_endproc
+ 123              	.LFE126:
+ 125              		.section	.text.adf_write_latch,"ax",%progbits
+ 126              		.align	1
+ 127              		.global	adf_write_latch
+ 128              		.syntax unified
+ 129              		.thumb
+ 130              		.thumb_func
+ 132              	adf_write_latch:
+ 133              	.LVL7:
+ 134              	.LFB127:
+  31:Core/Src/adf4002.c **** 
+  32:Core/Src/adf4002.c **** void adf_write_latch(ADF4002_t* adf, int latch_ind){
+ 135              		.loc 1 32 52 is_stmt 1 view -0
+ 136              		.cfi_startproc
+ 137              		@ args = 0, pretend = 0, frame = 8
+ 138              		@ frame_needed = 0, uses_anonymous_args = 0
+ 139              		.loc 1 32 52 is_stmt 0 view .LVU21
+ 140 0000 10B5     		push	{r4, lr}
+ 141              		.cfi_def_cfa_offset 8
+ 142              		.cfi_offset 4, -8
+ 143              		.cfi_offset 14, -4
+ 144 0002 82B0     		sub	sp, sp, #8
+ 145              		.cfi_def_cfa_offset 16
+ 146 0004 0446     		mov	r4, r0
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 4
+
+
+  33:Core/Src/adf4002.c ****     uint8_t data[3];
+ 147              		.loc 1 33 5 is_stmt 1 view .LVU22
+  34:Core/Src/adf4002.c ****     data[0] = adf->latches[latch_ind] >> 16;
+ 148              		.loc 1 34 5 view .LVU23
+ 149              		.loc 1 34 27 is_stmt 0 view .LVU24
+ 150 0006 0431     		adds	r1, r1, #4
+ 151              	.LVL8:
+ 152              		.loc 1 34 27 view .LVU25
+ 153 0008 00EB8101 		add	r1, r0, r1, lsl #2
+ 154              	.LVL9:
+ 155              		.loc 1 34 27 view .LVU26
+ 156 000c 4B68     		ldr	r3, [r1, #4]
+ 157              		.loc 1 34 39 view .LVU27
+ 158 000e 1A0C     		lsrs	r2, r3, #16
+ 159              		.loc 1 34 13 view .LVU28
+ 160 0010 8DF80420 		strb	r2, [sp, #4]
+  35:Core/Src/adf4002.c ****     data[1] = adf->latches[latch_ind] >> 8;
+ 161              		.loc 1 35 5 is_stmt 1 view .LVU29
+ 162              		.loc 1 35 39 is_stmt 0 view .LVU30
+ 163 0014 1A0A     		lsrs	r2, r3, #8
+ 164              		.loc 1 35 13 view .LVU31
+ 165 0016 8DF80520 		strb	r2, [sp, #5]
+  36:Core/Src/adf4002.c ****     data[2] = adf->latches[latch_ind] & 0xFF;
+ 166              		.loc 1 36 5 is_stmt 1 view .LVU32
+ 167              		.loc 1 36 13 is_stmt 0 view .LVU33
+ 168 001a 8DF80630 		strb	r3, [sp, #6]
+  37:Core/Src/adf4002.c **** 
+  38:Core/Src/adf4002.c ****     HAL_GPIO_WritePin(adf->le_port, adf->le_pin, 0);
+ 169              		.loc 1 38 5 is_stmt 1 view .LVU34
+ 170 001e 0022     		movs	r2, #0
+ 171 0020 0189     		ldrh	r1, [r0, #8]
+ 172 0022 4068     		ldr	r0, [r0, #4]
+ 173              	.LVL10:
+ 174              		.loc 1 38 5 is_stmt 0 view .LVU35
+ 175 0024 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 176              	.LVL11:
+  39:Core/Src/adf4002.c ****     HAL_SPI_Transmit(adf->hspi, data, 3, 10);
+ 177              		.loc 1 39 5 is_stmt 1 view .LVU36
+ 178 0028 0A23     		movs	r3, #10
+ 179 002a 0322     		movs	r2, #3
+ 180 002c 01A9     		add	r1, sp, #4
+ 181 002e 2068     		ldr	r0, [r4]
+ 182 0030 FFF7FEFF 		bl	HAL_SPI_Transmit
+ 183              	.LVL12:
+  40:Core/Src/adf4002.c ****     HAL_GPIO_WritePin(adf->le_port, adf->le_pin, 1);
+ 184              		.loc 1 40 5 view .LVU37
+ 185 0034 0122     		movs	r2, #1
+ 186 0036 2189     		ldrh	r1, [r4, #8]
+ 187 0038 6068     		ldr	r0, [r4, #4]
+ 188 003a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 189              	.LVL13:
+  41:Core/Src/adf4002.c **** }
+ 190              		.loc 1 41 1 is_stmt 0 view .LVU38
+ 191 003e 02B0     		add	sp, sp, #8
+ 192              		.cfi_def_cfa_offset 8
+ 193              		@ sp needed
+ 194 0040 10BD     		pop	{r4, pc}
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 5
+
+
+ 195              		.loc 1 41 1 view .LVU39
+ 196              		.cfi_endproc
+ 197              	.LFE127:
+ 199              		.section	.text.adf_init_chip,"ax",%progbits
+ 200              		.align	1
+ 201              		.global	adf_init_chip
+ 202              		.syntax unified
+ 203              		.thumb
+ 204              		.thumb_func
+ 206              	adf_init_chip:
+ 207              	.LVL14:
+ 208              	.LFB124:
+  11:Core/Src/adf4002.c ****     adf_disable_chip(adf);
+ 209              		.loc 1 11 35 is_stmt 1 view -0
+ 210              		.cfi_startproc
+ 211              		@ args = 0, pretend = 0, frame = 0
+ 212              		@ frame_needed = 0, uses_anonymous_args = 0
+  11:Core/Src/adf4002.c ****     adf_disable_chip(adf);
+ 213              		.loc 1 11 35 is_stmt 0 view .LVU41
+ 214 0000 10B5     		push	{r4, lr}
+ 215              		.cfi_def_cfa_offset 8
+ 216              		.cfi_offset 4, -8
+ 217              		.cfi_offset 14, -4
+ 218 0002 0446     		mov	r4, r0
+  12:Core/Src/adf4002.c ****     HAL_GPIO_WritePin(adf->le_port, adf->le_pin, 1);
+ 219              		.loc 1 12 5 is_stmt 1 view .LVU42
+ 220 0004 FFF7FEFF 		bl	adf_disable_chip
+ 221              	.LVL15:
+  13:Core/Src/adf4002.c ****     
+ 222              		.loc 1 13 5 view .LVU43
+ 223 0008 0122     		movs	r2, #1
+ 224 000a 2189     		ldrh	r1, [r4, #8]
+ 225 000c 6068     		ldr	r0, [r4, #4]
+ 226 000e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 227              	.LVL16:
+  15:Core/Src/adf4002.c ****     adf_write_latch(adf, FUNCTION_LATCH_IND);
+ 228              		.loc 1 15 5 view .LVU44
+ 229              		.syntax unified
+ 230              	@ 15 "Core/Src/adf4002.c" 1
+ 231 0012 00BF     		NOP
+ 232 0014 00BF     	 NOP
+ 233 0016 00BF     	 NOP
+ 234 0018 00BF     	 NOP
+ 235              	
+ 236              	@ 0 "" 2
+  16:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+ 237              		.loc 1 16 5 view .LVU45
+ 238              		.thumb
+ 239              		.syntax unified
+ 240 001a 0221     		movs	r1, #2
+ 241 001c 2046     		mov	r0, r4
+ 242 001e FFF7FEFF 		bl	adf_write_latch
+ 243              	.LVL17:
+  17:Core/Src/adf4002.c ****     adf_write_latch(adf, R_COUNTER_LATCH_IND);
+ 244              		.loc 1 17 5 view .LVU46
+ 245              		.syntax unified
+ 246              	@ 17 "Core/Src/adf4002.c" 1
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 6
+
+
+ 247 0022 00BF     		NOP
+ 248 0024 00BF     	 NOP
+ 249 0026 00BF     	 NOP
+ 250 0028 00BF     	 NOP
+ 251              	
+ 252              	@ 0 "" 2
+  18:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+ 253              		.loc 1 18 5 view .LVU47
+ 254              		.thumb
+ 255              		.syntax unified
+ 256 002a 0021     		movs	r1, #0
+ 257 002c 2046     		mov	r0, r4
+ 258 002e FFF7FEFF 		bl	adf_write_latch
+ 259              	.LVL18:
+  19:Core/Src/adf4002.c ****     adf_write_latch(adf, N_COUNTER_LATCH_IND);
+ 260              		.loc 1 19 5 view .LVU48
+ 261              		.syntax unified
+ 262              	@ 19 "Core/Src/adf4002.c" 1
+ 263 0032 00BF     		NOP
+ 264 0034 00BF     	 NOP
+ 265 0036 00BF     	 NOP
+ 266 0038 00BF     	 NOP
+ 267              	
+ 268              	@ 0 "" 2
+  20:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+ 269              		.loc 1 20 5 view .LVU49
+ 270              		.thumb
+ 271              		.syntax unified
+ 272 003a 0121     		movs	r1, #1
+ 273 003c 2046     		mov	r0, r4
+ 274 003e FFF7FEFF 		bl	adf_write_latch
+ 275              	.LVL19:
+  21:Core/Src/adf4002.c ****     adf_enable_chip(adf);
+ 276              		.loc 1 21 5 view .LVU50
+ 277              		.syntax unified
+ 278              	@ 21 "Core/Src/adf4002.c" 1
+ 279 0042 00BF     		NOP
+ 280 0044 00BF     	 NOP
+ 281 0046 00BF     	 NOP
+ 282 0048 00BF     	 NOP
+ 283              	
+ 284              	@ 0 "" 2
+  22:Core/Src/adf4002.c **** }
+ 285              		.loc 1 22 5 view .LVU51
+ 286              		.thumb
+ 287              		.syntax unified
+ 288 004a 2046     		mov	r0, r4
+ 289 004c FFF7FEFF 		bl	adf_enable_chip
+ 290              	.LVL20:
+  23:Core/Src/adf4002.c **** 
+ 291              		.loc 1 23 1 is_stmt 0 view .LVU52
+ 292 0050 10BD     		pop	{r4, pc}
+  23:Core/Src/adf4002.c **** 
+ 293              		.loc 1 23 1 view .LVU53
+ 294              		.cfi_endproc
+ 295              	.LFE124:
+ 297              		.section	.text.adf_write_all_latches,"ax",%progbits
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 7
+
+
+ 298              		.align	1
+ 299              		.global	adf_write_all_latches
+ 300              		.syntax unified
+ 301              		.thumb
+ 302              		.thumb_func
+ 304              	adf_write_all_latches:
+ 305              	.LVL21:
+ 306              	.LFB128:
+  42:Core/Src/adf4002.c **** 
+  43:Core/Src/adf4002.c **** void adf_write_all_latches(ADF4002_t* adf){
+ 307              		.loc 1 43 43 is_stmt 1 view -0
+ 308              		.cfi_startproc
+ 309              		@ args = 0, pretend = 0, frame = 0
+ 310              		@ frame_needed = 0, uses_anonymous_args = 0
+ 311              		.loc 1 43 43 is_stmt 0 view .LVU55
+ 312 0000 38B5     		push	{r3, r4, r5, lr}
+ 313              		.cfi_def_cfa_offset 16
+ 314              		.cfi_offset 3, -16
+ 315              		.cfi_offset 4, -12
+ 316              		.cfi_offset 5, -8
+ 317              		.cfi_offset 14, -4
+ 318 0002 0546     		mov	r5, r0
+  44:Core/Src/adf4002.c ****     for (int i = 0; i < 3; i++){
+ 319              		.loc 1 44 5 is_stmt 1 view .LVU56
+ 320              	.LBB2:
+ 321              		.loc 1 44 10 view .LVU57
+ 322              	.LVL22:
+ 323              		.loc 1 44 14 is_stmt 0 view .LVU58
+ 324 0004 0024     		movs	r4, #0
+ 325              		.loc 1 44 5 view .LVU59
+ 326 0006 08E0     		b	.L13
+ 327              	.LVL23:
+ 328              	.L14:
+  45:Core/Src/adf4002.c ****         adf_write_latch(adf, i);
+ 329              		.loc 1 45 9 is_stmt 1 discriminator 3 view .LVU60
+ 330 0008 2146     		mov	r1, r4
+ 331 000a 2846     		mov	r0, r5
+ 332 000c FFF7FEFF 		bl	adf_write_latch
+ 333              	.LVL24:
+  46:Core/Src/adf4002.c ****         PAUSE_BRIEF();
+ 334              		.loc 1 46 9 discriminator 3 view .LVU61
+ 335              		.syntax unified
+ 336              	@ 46 "Core/Src/adf4002.c" 1
+ 337 0010 00BF     		NOP
+ 338 0012 00BF     	 NOP
+ 339 0014 00BF     	 NOP
+ 340 0016 00BF     	 NOP
+ 341              	
+ 342              	@ 0 "" 2
+  44:Core/Src/adf4002.c ****     for (int i = 0; i < 3; i++){
+ 343              		.loc 1 44 29 discriminator 3 view .LVU62
+ 344              		.thumb
+ 345              		.syntax unified
+ 346 0018 0134     		adds	r4, r4, #1
+ 347              	.LVL25:
+ 348              	.L13:
+  44:Core/Src/adf4002.c ****     for (int i = 0; i < 3; i++){
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 8
+
+
+ 349              		.loc 1 44 23 discriminator 1 view .LVU63
+ 350 001a 022C     		cmp	r4, #2
+ 351 001c F4DD     		ble	.L14
+ 352              	.LBE2:
+  47:Core/Src/adf4002.c ****     }
+  48:Core/Src/adf4002.c **** }
+ 353              		.loc 1 48 1 is_stmt 0 view .LVU64
+ 354 001e 38BD     		pop	{r3, r4, r5, pc}
+ 355              		.loc 1 48 1 view .LVU65
+ 356              		.cfi_endproc
+ 357              	.LFE128:
+ 359              		.section	.text.adf_write_all_latches_w_reset,"ax",%progbits
+ 360              		.align	1
+ 361              		.global	adf_write_all_latches_w_reset
+ 362              		.syntax unified
+ 363              		.thumb
+ 364              		.thumb_func
+ 366              	adf_write_all_latches_w_reset:
+ 367              	.LVL26:
+ 368              	.LFB129:
+  49:Core/Src/adf4002.c **** 
+  50:Core/Src/adf4002.c **** void adf_write_all_latches_w_reset(ADF4002_t* adf){
+ 369              		.loc 1 50 51 is_stmt 1 view -0
+ 370              		.cfi_startproc
+ 371              		@ args = 0, pretend = 0, frame = 0
+ 372              		@ frame_needed = 0, uses_anonymous_args = 0
+ 373              		.loc 1 50 51 is_stmt 0 view .LVU67
+ 374 0000 10B5     		push	{r4, lr}
+ 375              		.cfi_def_cfa_offset 8
+ 376              		.cfi_offset 4, -8
+ 377              		.cfi_offset 14, -4
+ 378 0002 0446     		mov	r4, r0
+  51:Core/Src/adf4002.c ****     adf_write_latch(adf, 0);
+ 379              		.loc 1 51 5 is_stmt 1 view .LVU68
+ 380 0004 0021     		movs	r1, #0
+ 381 0006 FFF7FEFF 		bl	adf_write_latch
+ 382              	.LVL27:
+  52:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+ 383              		.loc 1 52 5 view .LVU69
+ 384              		.syntax unified
+ 385              	@ 52 "Core/Src/adf4002.c" 1
+ 386 000a 00BF     		NOP
+ 387 000c 00BF     	 NOP
+ 388 000e 00BF     	 NOP
+ 389 0010 00BF     	 NOP
+ 390              	
+ 391              	@ 0 "" 2
+  53:Core/Src/adf4002.c ****     adf_write_latch(adf, 1);
+ 392              		.loc 1 53 5 view .LVU70
+ 393              		.thumb
+ 394              		.syntax unified
+ 395 0012 0121     		movs	r1, #1
+ 396 0014 2046     		mov	r0, r4
+ 397 0016 FFF7FEFF 		bl	adf_write_latch
+ 398              	.LVL28:
+  54:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+ 399              		.loc 1 54 5 view .LVU71
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 9
+
+
+ 400              		.syntax unified
+ 401              	@ 54 "Core/Src/adf4002.c" 1
+ 402 001a 00BF     		NOP
+ 403 001c 00BF     	 NOP
+ 404 001e 00BF     	 NOP
+ 405 0020 00BF     	 NOP
+ 406              	
+ 407              	@ 0 "" 2
+  55:Core/Src/adf4002.c ****     adf_write_latch(adf, 3);
+ 408              		.loc 1 55 5 view .LVU72
+ 409              		.thumb
+ 410              		.syntax unified
+ 411 0022 0321     		movs	r1, #3
+ 412 0024 2046     		mov	r0, r4
+ 413 0026 FFF7FEFF 		bl	adf_write_latch
+ 414              	.LVL29:
+  56:Core/Src/adf4002.c ****     PAUSE_BRIEF();
+ 415              		.loc 1 56 5 view .LVU73
+ 416              		.syntax unified
+ 417              	@ 56 "Core/Src/adf4002.c" 1
+ 418 002a 00BF     		NOP
+ 419 002c 00BF     	 NOP
+ 420 002e 00BF     	 NOP
+ 421 0030 00BF     	 NOP
+ 422              	
+ 423              	@ 0 "" 2
+  57:Core/Src/adf4002.c **** }
+ 424              		.loc 1 57 1 is_stmt 0 view .LVU74
+ 425              		.thumb
+ 426              		.syntax unified
+ 427 0032 10BD     		pop	{r4, pc}
+ 428              		.loc 1 57 1 view .LVU75
+ 429              		.cfi_endproc
+ 430              	.LFE129:
+ 432              		.section	.text.adf_set_n_counter,"ax",%progbits
+ 433              		.align	1
+ 434              		.global	adf_set_n_counter
+ 435              		.syntax unified
+ 436              		.thumb
+ 437              		.thumb_func
+ 439              	adf_set_n_counter:
+ 440              	.LVL30:
+ 441              	.LFB130:
+  58:Core/Src/adf4002.c **** 
+  59:Core/Src/adf4002.c **** void adf_set_n_counter(ADF4002_t* adf, uint16_t value, bool update){
+ 442              		.loc 1 59 68 is_stmt 1 view -0
+ 443              		.cfi_startproc
+ 444              		@ args = 0, pretend = 0, frame = 0
+ 445              		@ frame_needed = 0, uses_anonymous_args = 0
+ 446              		.loc 1 59 68 is_stmt 0 view .LVU77
+ 447 0000 10B5     		push	{r4, lr}
+ 448              		.cfi_def_cfa_offset 8
+ 449              		.cfi_offset 4, -8
+ 450              		.cfi_offset 14, -4
+  60:Core/Src/adf4002.c ****     adf->latches[N_COUNTER_LATCH_IND] &= ~(8191 << 8);
+ 451              		.loc 1 60 5 is_stmt 1 view .LVU78
+ 452              		.loc 1 60 17 is_stmt 0 view .LVU79
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 10
+
+
+ 453 0002 8369     		ldr	r3, [r0, #24]
+ 454              		.loc 1 60 39 view .LVU80
+ 455 0004 23F4FF13 		bic	r3, r3, #2088960
+ 456 0008 23F4F853 		bic	r3, r3, #7936
+ 457 000c 8361     		str	r3, [r0, #24]
+  61:Core/Src/adf4002.c ****     adf->latches[N_COUNTER_LATCH_IND] |= (value & 8191) << 8;
+ 458              		.loc 1 61 5 is_stmt 1 view .LVU81
+ 459              		.loc 1 61 57 is_stmt 0 view .LVU82
+ 460 000e 054C     		ldr	r4, .L22
+ 461 0010 04EA0124 		and	r4, r4, r1, lsl #8
+ 462              		.loc 1 61 39 view .LVU83
+ 463 0014 2343     		orrs	r3, r3, r4
+ 464 0016 8361     		str	r3, [r0, #24]
+  62:Core/Src/adf4002.c ****     if(update){
+ 465              		.loc 1 62 5 is_stmt 1 view .LVU84
+ 466              		.loc 1 62 7 is_stmt 0 view .LVU85
+ 467 0018 02B9     		cbnz	r2, .L21
+ 468              	.LVL31:
+ 469              	.L18:
+  63:Core/Src/adf4002.c ****         adf_write_latch(adf, N_COUNTER_LATCH_IND);
+  64:Core/Src/adf4002.c ****     }
+  65:Core/Src/adf4002.c **** }
+ 470              		.loc 1 65 1 view .LVU86
+ 471 001a 10BD     		pop	{r4, pc}
+ 472              	.LVL32:
+ 473              	.L21:
+  63:Core/Src/adf4002.c ****         adf_write_latch(adf, N_COUNTER_LATCH_IND);
+ 474              		.loc 1 63 9 is_stmt 1 view .LVU87
+ 475 001c 0121     		movs	r1, #1
+ 476              	.LVL33:
+  63:Core/Src/adf4002.c ****         adf_write_latch(adf, N_COUNTER_LATCH_IND);
+ 477              		.loc 1 63 9 is_stmt 0 view .LVU88
+ 478 001e FFF7FEFF 		bl	adf_write_latch
+ 479              	.LVL34:
+ 480              		.loc 1 65 1 view .LVU89
+ 481 0022 FAE7     		b	.L18
+ 482              	.L23:
+ 483              		.align	2
+ 484              	.L22:
+ 485 0024 00FF1F00 		.word	2096896
+ 486              		.cfi_endproc
+ 487              	.LFE130:
+ 489              		.section	.text.adf_set_r_counter,"ax",%progbits
+ 490              		.align	1
+ 491              		.global	adf_set_r_counter
+ 492              		.syntax unified
+ 493              		.thumb
+ 494              		.thumb_func
+ 496              	adf_set_r_counter:
+ 497              	.LVL35:
+ 498              	.LFB131:
+  66:Core/Src/adf4002.c **** 
+  67:Core/Src/adf4002.c **** void adf_set_r_counter(ADF4002_t* adf, uint16_t value, bool update){
+ 499              		.loc 1 67 68 is_stmt 1 view -0
+ 500              		.cfi_startproc
+ 501              		@ args = 0, pretend = 0, frame = 0
+ 502              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 11
+
+
+ 503              		.loc 1 67 68 is_stmt 0 view .LVU91
+ 504 0000 08B5     		push	{r3, lr}
+ 505              		.cfi_def_cfa_offset 8
+ 506              		.cfi_offset 3, -8
+ 507              		.cfi_offset 14, -4
+  68:Core/Src/adf4002.c ****     adf->latches[R_COUNTER_LATCH_IND] &= ~(16383 << 2);
+ 508              		.loc 1 68 5 is_stmt 1 view .LVU92
+ 509              		.loc 1 68 17 is_stmt 0 view .LVU93
+ 510 0002 4369     		ldr	r3, [r0, #20]
+ 511              		.loc 1 68 39 view .LVU94
+ 512 0004 23F47F43 		bic	r3, r3, #65280
+ 513 0008 23F0FC03 		bic	r3, r3, #252
+ 514 000c 4361     		str	r3, [r0, #20]
+  69:Core/Src/adf4002.c ****     adf->latches[R_COUNTER_LATCH_IND] |= (value & 16383) << 2;
+ 515              		.loc 1 69 5 is_stmt 1 view .LVU95
+ 516              		.loc 1 69 58 is_stmt 0 view .LVU96
+ 517 000e 8900     		lsls	r1, r1, #2
+ 518              	.LVL36:
+ 519              		.loc 1 69 58 view .LVU97
+ 520 0010 89B2     		uxth	r1, r1
+ 521              		.loc 1 69 39 view .LVU98
+ 522 0012 0B43     		orrs	r3, r3, r1
+ 523 0014 4361     		str	r3, [r0, #20]
+  70:Core/Src/adf4002.c ****     if(update){
+ 524              		.loc 1 70 5 is_stmt 1 view .LVU99
+ 525              		.loc 1 70 7 is_stmt 0 view .LVU100
+ 526 0016 02B9     		cbnz	r2, .L27
+ 527              	.LVL37:
+ 528              	.L24:
+  71:Core/Src/adf4002.c ****         adf_write_latch(adf, R_COUNTER_LATCH_IND);
+  72:Core/Src/adf4002.c ****     }
+  73:Core/Src/adf4002.c **** }...
+ 529              		.loc 1 73 1 view .LVU101
+ 530 0018 08BD     		pop	{r3, pc}
+ 531              	.LVL38:
+ 532              	.L27:
+  71:Core/Src/adf4002.c ****         adf_write_latch(adf, R_COUNTER_LATCH_IND);
+ 533              		.loc 1 71 9 is_stmt 1 view .LVU102
+ 534 001a 0021     		movs	r1, #0
+ 535 001c FFF7FEFF 		bl	adf_write_latch
+ 536              	.LVL39:
+ 537              		.loc 1 73 1 is_stmt 0 view .LVU103
+ 538 0020 FAE7     		b	.L24
+ 539              		.cfi_endproc
+ 540              	.LFE131:
+ 542              		.text
+ 543              	.Letext0:
+ 544              		.file 2 "c:\\program files (x86)\\arm gnu toolchain arm-none-eabi\\12.2 mpacbti-bet1\\arm-none-eab
+ 545              		.file 3 "c:\\program files (x86)\\arm gnu toolchain arm-none-eabi\\12.2 mpacbti-bet1\\arm-none-eab
+ 546              		.file 4 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 547              		.file 5 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 548              		.file 6 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 549              		.file 7 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 550              		.file 8 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h"
+ 551              		.file 9 "Core/Inc/adf4002.h"
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 adf4002.c
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:21     .text.adf_init_mem:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:27     .text.adf_init_mem:00000000 adf_init_mem
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:56     .text.adf_init_mem:00000014 $d
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:62     .text.adf_enable_chip:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:68     .text.adf_enable_chip:00000000 adf_enable_chip
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:94     .text.adf_disable_chip:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:100    .text.adf_disable_chip:00000000 adf_disable_chip
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:126    .text.adf_write_latch:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:132    .text.adf_write_latch:00000000 adf_write_latch
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:200    .text.adf_init_chip:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:206    .text.adf_init_chip:00000000 adf_init_chip
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:298    .text.adf_write_all_latches:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:304    .text.adf_write_all_latches:00000000 adf_write_all_latches
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:360    .text.adf_write_all_latches_w_reset:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:366    .text.adf_write_all_latches_w_reset:00000000 adf_write_all_latches_w_reset
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:433    .text.adf_set_n_counter:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:439    .text.adf_set_n_counter:00000000 adf_set_n_counter
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:485    .text.adf_set_n_counter:00000024 $d
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:490    .text.adf_set_r_counter:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccP2phmG.s:496    .text.adf_set_r_counter:00000000 adf_set_r_counter
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_SPI_Transmit

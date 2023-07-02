@@ -1,0 +1,343 @@
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"ublox.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/ublox.c"
+  20              		.section	.text.ublox_init,"ax",%progbits
+  21              		.align	1
+  22              		.global	ublox_init
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	ublox_init:
+  28              	.LVL0:
+  29              	.LFB123:
+   1:Core/Src/ublox.c **** #include "ublox.h"
+   2:Core/Src/ublox.c **** #include <stdbool.h>
+   3:Core/Src/ublox.c **** #include <string.h>
+   4:Core/Src/ublox.c **** 
+   5:Core/Src/ublox.c **** void ublox_init(MaxM8C_t* gps, I2C_HandleTypeDef* hi2c, UART_HandleTypeDef* huart){
+  30              		.loc 1 5 83 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+   6:Core/Src/ublox.c ****     gps->hi2c = hi2c;
+  35              		.loc 1 6 5 view .LVU1
+  36              		.loc 1 6 15 is_stmt 0 view .LVU2
+  37 0000 0160     		str	r1, [r0]
+   7:Core/Src/ublox.c ****     gps->huart = huart;
+  38              		.loc 1 7 5 is_stmt 1 view .LVU3
+  39              		.loc 1 7 16 is_stmt 0 view .LVU4
+  40 0002 4260     		str	r2, [r0, #4]
+   8:Core/Src/ublox.c ****     gps->i2c_addr = MAX_M8C_DEFAULT_I2C_ADDR;
+  41              		.loc 1 8 5 is_stmt 1 view .LVU5
+  42              		.loc 1 8 19 is_stmt 0 view .LVU6
+  43 0004 4223     		movs	r3, #66
+  44 0006 0372     		strb	r3, [r0, #8]
+   9:Core/Src/ublox.c **** }
+  45              		.loc 1 9 1 view .LVU7
+  46 0008 7047     		bx	lr
+  47              		.cfi_endproc
+  48              	.LFE123:
+  50              		.section	.text.ublox_contains_data_stop,"ax",%progbits
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s 			page 2
+
+
+  51              		.align	1
+  52              		.global	ublox_contains_data_stop
+  53              		.syntax unified
+  54              		.thumb
+  55              		.thumb_func
+  57              	ublox_contains_data_stop:
+  58              	.LVL1:
+  59              	.LFB124:
+  10:Core/Src/ublox.c **** 
+  11:Core/Src/ublox.c **** bool ublox_contains_data_stop(uint8_t* data){
+  60              		.loc 1 11 45 is_stmt 1 view -0
+  61              		.cfi_startproc
+  62              		@ args = 0, pretend = 0, frame = 0
+  63              		@ frame_needed = 0, uses_anonymous_args = 0
+  64              		@ link register save eliminated.
+  12:Core/Src/ublox.c ****     for(int i = 0; i < UBLOX_I2C_CHUNK_SIZE; i++){
+  65              		.loc 1 12 5 view .LVU9
+  66              	.LBB2:
+  67              		.loc 1 12 9 view .LVU10
+  68              		.loc 1 12 13 is_stmt 0 view .LVU11
+  69 0000 0023     		movs	r3, #0
+  70              	.LVL2:
+  71              	.L3:
+  72              		.loc 1 12 22 is_stmt 1 discriminator 1 view .LVU12
+  73 0002 032B     		cmp	r3, #3
+  74 0004 04DC     		bgt	.L7
+  13:Core/Src/ublox.c ****         if(data[i] == 0xFF){
+  75              		.loc 1 13 9 view .LVU13
+  76              		.loc 1 13 16 is_stmt 0 view .LVU14
+  77 0006 C25C     		ldrb	r2, [r0, r3]	@ zero_extendqisi2
+  78              		.loc 1 13 11 view .LVU15
+  79 0008 FF2A     		cmp	r2, #255
+  80 000a 03D0     		beq	.L6
+  12:Core/Src/ublox.c ****     for(int i = 0; i < UBLOX_I2C_CHUNK_SIZE; i++){
+  81              		.loc 1 12 47 is_stmt 1 discriminator 2 view .LVU16
+  82 000c 0133     		adds	r3, r3, #1
+  83              	.LVL3:
+  12:Core/Src/ublox.c ****     for(int i = 0; i < UBLOX_I2C_CHUNK_SIZE; i++){
+  84              		.loc 1 12 47 is_stmt 0 discriminator 2 view .LVU17
+  85 000e F8E7     		b	.L3
+  86              	.L7:
+  12:Core/Src/ublox.c ****     for(int i = 0; i < UBLOX_I2C_CHUNK_SIZE; i++){
+  87              		.loc 1 12 47 discriminator 2 view .LVU18
+  88              	.LBE2:
+  14:Core/Src/ublox.c ****             return true;
+  15:Core/Src/ublox.c ****         }
+  16:Core/Src/ublox.c ****     }
+  17:Core/Src/ublox.c ****     return false;
+  89              		.loc 1 17 12 view .LVU19
+  90 0010 0020     		movs	r0, #0
+  91              	.LVL4:
+  92              	.LBB3:
+  93              		.loc 1 17 12 view .LVU20
+  94 0012 7047     		bx	lr
+  95              	.LVL5:
+  96              	.L6:
+  14:Core/Src/ublox.c ****             return true;
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s 			page 3
+
+
+  97              		.loc 1 14 20 view .LVU21
+  98 0014 0120     		movs	r0, #1
+  99              	.LVL6:
+  14:Core/Src/ublox.c ****             return true;
+ 100              		.loc 1 14 20 view .LVU22
+ 101              	.LBE3:
+  18:Core/Src/ublox.c **** }
+ 102              		.loc 1 18 1 view .LVU23
+ 103 0016 7047     		bx	lr
+ 104              		.cfi_endproc
+ 105              	.LFE124:
+ 107              		.section	.text.ublox_read_all_data_i2c,"ax",%progbits
+ 108              		.align	1
+ 109              		.global	ublox_read_all_data_i2c
+ 110              		.syntax unified
+ 111              		.thumb
+ 112              		.thumb_func
+ 114              	ublox_read_all_data_i2c:
+ 115              	.LVL7:
+ 116              	.LFB125:
+  19:Core/Src/ublox.c **** 
+  20:Core/Src/ublox.c **** void ublox_read_all_data_i2c(MaxM8C_t* gps, int start_pos){
+ 117              		.loc 1 20 59 is_stmt 1 view -0
+ 118              		.cfi_startproc
+ 119              		@ args = 0, pretend = 0, frame = 0
+ 120              		@ frame_needed = 0, uses_anonymous_args = 0
+ 121              		.loc 1 20 59 is_stmt 0 view .LVU25
+ 122 0000 70B5     		push	{r4, r5, r6, lr}
+ 123              		.cfi_def_cfa_offset 16
+ 124              		.cfi_offset 4, -16
+ 125              		.cfi_offset 5, -12
+ 126              		.cfi_offset 6, -8
+ 127              		.cfi_offset 14, -4
+ 128 0002 84B0     		sub	sp, sp, #16
+ 129              		.cfi_def_cfa_offset 32
+ 130 0004 0546     		mov	r5, r0
+  21:Core/Src/ublox.c ****     gps->rx_buf_pos = start_pos;
+ 131              		.loc 1 21 5 is_stmt 1 view .LVU26
+ 132              		.loc 1 21 21 is_stmt 0 view .LVU27
+ 133 0006 C160     		str	r1, [r0, #12]
+  22:Core/Src/ublox.c **** 
+  23:Core/Src/ublox.c ****     // i2c_addr is already left shifted
+  24:Core/Src/ublox.c ****     // address the 0xFF position
+  25:Core/Src/ublox.c ****     // if dat comes back != 0xFF: this is real data, store and keep going
+  26:Core/Src/ublox.c ****     // else: no more data, exit
+  27:Core/Src/ublox.c ****     // first transaction sends register address to ensure we're pointing to 0xFF
+  28:Core/Src/ublox.c ****     // S SLAVE_ADDR W | 0xFF | S SLAVE_ADDR R | DATA_0 | ... | DATA_N NAK STOP
+  29:Core/Src/ublox.c ****     HAL_I2C_Mem_Read(gps->hi2c, gps->i2c_addr, 0xFF, 1, gps->rx_buf + gps->rx_buf_pos, UBLOX_I2C_CH
+ 134              		.loc 1 29 5 is_stmt 1 view .LVU28
+ 135              		.loc 1 29 57 is_stmt 0 view .LVU29
+ 136 0008 0646     		mov	r6, r0
+ 137              		.loc 1 29 5 view .LVU30
+ 138 000a 56F8100B 		ldr	r0, [r6], #16
+ 139              	.LVL8:
+ 140              		.loc 1 29 5 view .LVU31
+ 141 000e 3223     		movs	r3, #50
+ 142 0010 0293     		str	r3, [sp, #8]
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s 			page 4
+
+
+ 143 0012 0423     		movs	r3, #4
+ 144 0014 0193     		str	r3, [sp, #4]
+ 145 0016 3144     		add	r1, r1, r6
+ 146              	.LVL9:
+ 147              		.loc 1 29 5 view .LVU32
+ 148 0018 0091     		str	r1, [sp]
+ 149 001a 0123     		movs	r3, #1
+ 150 001c FF22     		movs	r2, #255
+ 151 001e 297A     		ldrb	r1, [r5, #8]	@ zero_extendqisi2
+ 152 0020 FFF7FEFF 		bl	HAL_I2C_Mem_Read
+ 153              	.LVL10:
+  30:Core/Src/ublox.c **** 
+  31:Core/Src/ublox.c ****     while(!ublox_contains_data_stop(gps->rx_buf + gps->rx_buf_pos) &&
+ 154              		.loc 1 31 5 is_stmt 1 view .LVU33
+ 155              		.loc 1 31 10 is_stmt 0 view .LVU34
+ 156 0024 09E0     		b	.L9
+ 157              	.L11:
+  32:Core/Src/ublox.c ****           gps->rx_buf_pos + UBLOX_I2C_CHUNK_SIZE < UBLOX_RX_BUF_SIZE)
+  33:Core/Src/ublox.c ****     {
+  34:Core/Src/ublox.c ****         gps->rx_buf_pos += UBLOX_I2C_CHUNK_SIZE; // jump over all the stuff we just read
+ 158              		.loc 1 34 9 is_stmt 1 view .LVU35
+ 159              		.loc 1 34 25 is_stmt 0 view .LVU36
+ 160 0026 221D     		adds	r2, r4, #4
+ 161 0028 EA60     		str	r2, [r5, #12]
+  35:Core/Src/ublox.c ****         HAL_I2C_Master_Receive(gps->hi2c, gps->i2c_addr, gps->rx_buf + gps->rx_buf_pos, UBLOX_I2C_C
+ 162              		.loc 1 35 9 is_stmt 1 view .LVU37
+ 163 002a 3223     		movs	r3, #50
+ 164 002c 0093     		str	r3, [sp]
+ 165 002e 0423     		movs	r3, #4
+ 166 0030 3244     		add	r2, r2, r6
+ 167 0032 297A     		ldrb	r1, [r5, #8]	@ zero_extendqisi2
+ 168 0034 2868     		ldr	r0, [r5]
+ 169 0036 FFF7FEFF 		bl	HAL_I2C_Master_Receive
+ 170              	.LVL11:
+ 171              	.L9:
+  31:Core/Src/ublox.c ****           gps->rx_buf_pos + UBLOX_I2C_CHUNK_SIZE < UBLOX_RX_BUF_SIZE)
+ 172              		.loc 1 31 68 view .LVU38
+  31:Core/Src/ublox.c ****           gps->rx_buf_pos + UBLOX_I2C_CHUNK_SIZE < UBLOX_RX_BUF_SIZE)
+ 173              		.loc 1 31 54 is_stmt 0 view .LVU39
+ 174 003a EC68     		ldr	r4, [r5, #12]
+  31:Core/Src/ublox.c ****           gps->rx_buf_pos + UBLOX_I2C_CHUNK_SIZE < UBLOX_RX_BUF_SIZE)
+ 175              		.loc 1 31 12 view .LVU40
+ 176 003c 3019     		adds	r0, r6, r4
+ 177 003e FFF7FEFF 		bl	ublox_contains_data_stop
+ 178              	.LVL12:
+  31:Core/Src/ublox.c ****           gps->rx_buf_pos + UBLOX_I2C_CHUNK_SIZE < UBLOX_RX_BUF_SIZE)
+ 179              		.loc 1 31 68 view .LVU41
+ 180 0042 08B9     		cbnz	r0, .L8
+  31:Core/Src/ublox.c ****           gps->rx_buf_pos + UBLOX_I2C_CHUNK_SIZE < UBLOX_RX_BUF_SIZE)
+ 181              		.loc 1 31 68 discriminator 1 view .LVU42
+ 182 0044 FB2C     		cmp	r4, #251
+ 183 0046 EEDD     		ble	.L11
+ 184              	.L8:
+  36:Core/Src/ublox.c ****     }
+  37:Core/Src/ublox.c **** 
+  38:Core/Src/ublox.c ****     if(ublox_contains_data_stop(gps->rx_buf + gps->rx_buf_pos)){
+  39:Core/Src/ublox.c **** 
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s 			page 5
+
+
+  40:Core/Src/ublox.c ****     }
+  41:Core/Src/ublox.c **** 
+  42:Core/Src/ublox.c **** }
+ 185              		.loc 1 42 1 view .LVU43
+ 186 0048 04B0     		add	sp, sp, #16
+ 187              		.cfi_def_cfa_offset 16
+ 188              		@ sp needed
+ 189 004a 70BD     		pop	{r4, r5, r6, pc}
+ 190              		.loc 1 42 1 view .LVU44
+ 191              		.cfi_endproc
+ 192              	.LFE125:
+ 194              		.section	.text.ublox_get_next_byte_i2c,"ax",%progbits
+ 195              		.align	1
+ 196              		.global	ublox_get_next_byte_i2c
+ 197              		.syntax unified
+ 198              		.thumb
+ 199              		.thumb_func
+ 201              	ublox_get_next_byte_i2c:
+ 202              	.LVL13:
+ 203              	.LFB126:
+  43:Core/Src/ublox.c **** 
+  44:Core/Src/ublox.c **** bool ublox_get_next_byte_i2c(MaxM8C_t* gps){
+ 204              		.loc 1 44 44 is_stmt 1 view -0
+ 205              		.cfi_startproc
+ 206              		@ args = 0, pretend = 0, frame = 8
+ 207              		@ frame_needed = 0, uses_anonymous_args = 0
+ 208              		.loc 1 44 44 is_stmt 0 view .LVU46
+ 209 0000 10B5     		push	{r4, lr}
+ 210              		.cfi_def_cfa_offset 8
+ 211              		.cfi_offset 4, -8
+ 212              		.cfi_offset 14, -4
+ 213 0002 86B0     		sub	sp, sp, #24
+ 214              		.cfi_def_cfa_offset 32
+  45:Core/Src/ublox.c ****     bool retval = false;
+ 215              		.loc 1 45 5 is_stmt 1 view .LVU47
+ 216              	.LVL14:
+  46:Core/Src/ublox.c **** 
+  47:Core/Src/ublox.c ****     uint8_t dat = 0;
+ 217              		.loc 1 47 5 view .LVU48
+ 218              		.loc 1 47 13 is_stmt 0 view .LVU49
+ 219 0004 0024     		movs	r4, #0
+ 220 0006 8DF81740 		strb	r4, [sp, #23]
+  48:Core/Src/ublox.c ****     // i2c_addr is already left shifted
+  49:Core/Src/ublox.c ****     HAL_I2C_Mem_Read(gps->hi2c, gps->i2c_addr, 0xFF, 1, &dat, 1, 50);
+ 221              		.loc 1 49 5 is_stmt 1 view .LVU50
+ 222 000a 3223     		movs	r3, #50
+ 223 000c 0293     		str	r3, [sp, #8]
+ 224 000e 0123     		movs	r3, #1
+ 225 0010 0193     		str	r3, [sp, #4]
+ 226 0012 0DF11702 		add	r2, sp, #23
+ 227 0016 0092     		str	r2, [sp]
+ 228 0018 FF22     		movs	r2, #255
+ 229 001a 017A     		ldrb	r1, [r0, #8]	@ zero_extendqisi2
+ 230 001c 0068     		ldr	r0, [r0]
+ 231              	.LVL15:
+ 232              		.loc 1 49 5 is_stmt 0 view .LVU51
+ 233 001e FFF7FEFF 		bl	HAL_I2C_Mem_Read
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s 			page 6
+
+
+ 234              	.LVL16:
+  50:Core/Src/ublox.c **** 
+  51:Core/Src/ublox.c ****     return retval;
+ 235              		.loc 1 51 5 is_stmt 1 view .LVU52
+  52:Core/Src/ublox.c **** }...
+ 236              		.loc 1 52 1 is_stmt 0 view .LVU53
+ 237 0022 2046     		mov	r0, r4
+ 238 0024 06B0     		add	sp, sp, #24
+ 239              		.cfi_def_cfa_offset 8
+ 240              		@ sp needed
+ 241 0026 10BD     		pop	{r4, pc}
+ 242              		.cfi_endproc
+ 243              	.LFE126:
+ 245              		.text
+ 246              	.Letext0:
+ 247              		.file 2 "c:\\program files (x86)\\arm gnu toolchain arm-none-eabi\\12.2 mpacbti-bet1\\arm-none-eab
+ 248              		.file 3 "c:\\program files (x86)\\arm gnu toolchain arm-none-eabi\\12.2 mpacbti-bet1\\arm-none-eab
+ 249              		.file 4 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h"
+ 250              		.file 5 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 251              		.file 6 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 252              		.file 7 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h"
+ 253              		.file 8 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
+ 254              		.file 9 "Core/Inc/ublox.h"
+ARM GAS  C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 ublox.c
+C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s:21     .text.ublox_init:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s:27     .text.ublox_init:00000000 ublox_init
+C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s:51     .text.ublox_contains_data_stop:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s:57     .text.ublox_contains_data_stop:00000000 ublox_contains_data_stop
+C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s:108    .text.ublox_read_all_data_i2c:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s:114    .text.ublox_read_all_data_i2c:00000000 ublox_read_all_data_i2c
+C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s:195    .text.ublox_get_next_byte_i2c:00000000 $t
+C:\Users\cordi\AppData\Local\Temp\ccU6bAB3.s:201    .text.ublox_get_next_byte_i2c:00000000 ublox_get_next_byte_i2c
+
+UNDEFINED SYMBOLS
+HAL_I2C_Mem_Read
+HAL_I2C_Master_Receive

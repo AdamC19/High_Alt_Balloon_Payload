@@ -1,5 +1,10 @@
 # High-Altitude Balloon Payload
-These are the source files for my high-altitude balloon payload. The primary goals of the payload are:
+
+These are the source files for my high-altitude balloon payload. 
+
+Read more about this project and its development [on my website](http://acordingley.us/ke8itf/).
+
+The primary goals of the payload are:
 * Make measurements and collect data: 
     * GPS Location
     * Barometric pressure (second determination of altitude)

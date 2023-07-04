@@ -36,6 +36,7 @@
 #include <stdbool.h>
 #include <stdarg.h> //for va_list var arg functions
 #include "adf4002.h"
+#include "printf.h"
 #include "ublox.h"
 
 /* USER CODE END Includes */
@@ -77,8 +78,10 @@ typedef enum fields_enum {
   CALLSIGN_5,
   TX_PERIOD_H,
   TX_PERIOD_L,
+  LOG_INTERVAL,
   SD_CARD_OK,
   GPS_PPS_OK,
+  DEBUG_MODE,
   NUM_FIELDS
 }FieldId_t;
 
@@ -118,8 +121,15 @@ typedef struct sd_card_struct {
 
 #define STARTUP_DELAY_US      50000
 
+#define POLL_GPS_INTERVAL     10000
+
 #define CALLSIGN_LEN          6
-#define FILE_CHUNK_SIZE       128
+#define FILE_CHUNK_SIZE       256
+#define DEBUG_LINE_SIZE       128
+#define DEBUG_BUF_SIZE        (DEBUG_LINE_SIZE + 20)
+#define DEBUG_MODE_NORMAL     0
+#define DEBUG_MODE_CONSOLE    1
+#define UART_DEBUG_BUF_SIZE   256
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -147,8 +157,6 @@ ADF4002_t lo_gen_pll;
 
 volatile bool startup = true;
 
-volatile uint8_t radio_state = STATE_GOTO_IDLE;
-
 volatile uint64_t microseconds = 0;
 
 volatile uint64_t last_pps_timestamp = 0;
@@ -159,6 +167,10 @@ volatile uint64_t last_tx_timestamp = 0;
 
 volatile uint64_t begin_lock_timestamp = 0;
 
+volatile uint64_t last_log_timestamp = 0;
+
+volatile uint64_t poll_gps_timestamp = 0;
+
 /* SD CARD THINGS */
 SdCard_t sdcard;
 bool sd_init_success = false;
@@ -168,6 +180,15 @@ FIL config_file;
 MaxM8C_t gps;
 FIL gps_logfile;
 bool log_gps = false;
+
+/* HOUSEKEEPING THINGS */
+const char* debug_fname = "debug.txt";
+char debug_buf[DEBUG_BUF_SIZE]; // used by the handy dandy debug function
+char debug_line[DEBUG_LINE_SIZE]; // used by user (dats me) to snprintf stuff to
+char uart_debug_buf[UART_DEBUG_BUF_SIZE];
+char uart_scratch_buf[DEBUG_BUF_SIZE];
+volatile int uart_debug_buf_pos = 0;
+volatile int uart_debug_tx_len = 0;
 
 /* USER CODE END PV */
 
@@ -182,6 +203,10 @@ uint64_t get_microseconds();
 bool init_sdcard(SdCard_t* sdcard);
 int file_open_read(SdCard_t* sd, const TCHAR* fname, FIL* fp);
 int file_open_write(SdCard_t* sd, const TCHAR* fname, FIL* fp);
+void file_append_line(SdCard_t* sd, const TCHAR* fname, char* line);
+void debug_all(char* line);
+void debug(char* line);
+void debug_uart(char* line);
 
 /* USER CODE END PFP */
 
@@ -259,8 +284,9 @@ int main(void)
   
   // Init GPS Receiver
   gps.delay_ms = HAL_Delay;
-  ublox_init(&gps, &hi2c1, &huart1);
-
+  gps.console_print = debug_uart;
+  ublox_init(&gps, &hi2c1, &huart1, GPS_RESETB_GPIO_Port, GPS_RESETB_Pin);
+  
 
   /* USER CODE END 2 */
 
@@ -388,10 +414,16 @@ int main(void)
     if (pps_duration_us == 0 ||
         get_microseconds() > (last_pps_timestamp + pps_duration_us + 1000) ){
       // we don't have GPS signal
+      if(field_mem[GPS_PPS_OK]){
+        debug_all("GPS PPS not present/lost");
+      }
       field_mem[GPS_PPS_OK] = false;
       HAL_GPIO_WritePin(LED_0_GPIO_Port, LED_0_Pin, 0);
     }else{
       // we have a GPS signal!
+      if(!field_mem[GPS_PPS_OK]){
+        debug_all("GPS PPS present");
+      }
       field_mem[GPS_PPS_OK] = true;
       HAL_GPIO_WritePin(LED_0_GPIO_Port, LED_0_Pin, 1);
     }
@@ -420,8 +452,26 @@ int main(void)
     }
     /* END STARTUP DELAY CHECKING */
 
+
     /* BEGIN GPS DATA GRAB AND LOGGING */
     // TODO do GPS things
+    if(get_microseconds() - poll_gps_timestamp > POLL_GPS_INTERVAL){
+      if(ublox_bytes_available_i2c(&gps) > 0){
+        ublox_read_all_data_i2c(&gps, 0);
+      }
+      ublox_parse_messages(&gps);
+      ublox_print_all_messages(&gps, debug_uart);
+
+      // TODO do real things with the messages
+
+      ublox_cleanup_messages(&gps);
+      
+    }
+
+    // write generic data to the log file
+    if(get_microseconds() - last_log_timestamp > (field_mem[LOG_INTERVAL] * 1000000)){
+      last_log_timestamp = get_microseconds();
+    }
     /* END GPS DATA GRAB AND LOGGING */
 
   
@@ -521,11 +571,17 @@ void init_field_mem(uint8_t * mem, bool* writable){
   mem[CALLSIGN_5] = 'F';
   writable[CALLSIGN_5] = true;
 
+  mem[LOG_INTERVAL] = 5;
+  writable[LOG_INTERVAL] = true;
+
   mem[TX_PERIOD_H] = (TX_PERIOD_SECONDS >> 8) & 0xFF;
   writable[TX_PERIOD_L] = TX_PERIOD_SECONDS & 0xFF;
 
   mem[SD_CARD_OK] = false; // default to this
   mem[GPS_PPS_OK] = false; // default
+
+  mem[DEBUG_MODE] = DEBUG_MODE_NORMAL;
+  writable[DEBUG_MODE] = true;
 }
 
 
@@ -540,7 +596,7 @@ void strstrip(char* str, char* loc){
   }
   strcpy(loc, str + i); // copy over everything except leading whitespace
 
-  int i = strlen(loc) - 1; // get index of last character
+  i = strlen(loc) - 1; // get index of last character
   while(i >= 0 && (loc[i] == ' ' || loc[i] == '\n' || loc[i] == '\r' || loc[i] == '\t')){
     loc[i] = '\0'; // set this whitespace to null termination
     i--;
@@ -567,7 +623,7 @@ void init_field_mem_from_config(uint8_t * mem, SdCard_t* sd, FIL* fp){
     BYTE* word = (BYTE*)malloc(bytes_read); // likely more space than we need
     token = strtok(readbuf, '='); // get first KEY
     while(token != NULL){
-      strstrip(token, word); 
+      strstrip(token, word); // word now holds the KEY
       
       // get VALUE for this key
       token = strtok(NULL, '\n');
@@ -590,6 +646,17 @@ void init_field_mem_from_config(uint8_t * mem, SdCard_t* sd, FIL* fp){
         int period = atoi(word);
         mem[TX_PERIOD_H] = (period >> 8) & 0xFF;
         mem[TX_PERIOD_L] = period & 0xFF;
+      }else if(strcmp(word, "LOG_INTERVAL") == 0){
+        strstrip(token, word);
+        mem[LOG_INTERVAL] = atoi(word);
+      }else if(strcmp(word, "DEBUG_MODE") == 0){
+        strstrip(token, word);
+        if(strcmp(word, "CONSOLE") == 0){
+          mem[DEBUG_MODE] = DEBUG_MODE_CONSOLE;
+        }else{
+          mem[DEBUG_MODE] = DEBUG_MODE_NORMAL;
+        }
+        
       }
       // get next KEY
       token = strtok(NULL, '=');
@@ -659,6 +726,96 @@ int file_open_write(SdCard_t* sd, const TCHAR* fname, FIL* fp){
 
 
 /**
+ * Opens file of name fname and appends line, writing a trailing newline
+ * character if one is not included in line.
+ * Closes file after operation is done.
+*/
+void file_append_line(SdCard_t* sd, const TCHAR* fname, char* line){
+  FIL ftmp;
+  if(file_open_write(sd, fname, &ftmp) != 0){
+    return; // fail
+  }
+  UINT bytes_wrote;
+  UINT len = strlen(line);
+  sd->result = f_write(&ftmp, (BYTE*)line, len, &bytes_wrote);
+
+  if(line[len - 1] != '\n'){
+    BYTE tmp_byte = '\n';
+    sd->result = f_write(&ftmp, &tmp_byte, 1, &bytes_wrote);
+  }
+  f_close(&ftmp);
+}
+
+
+/**
+ * Sends debug info to SD card and UART
+*/
+void debug_all(char* line){
+  debug(line);
+  debug_uart(line);
+}
+
+
+/**
+ * Handy-dandy function for writing a timestamped debug line using the 
+ * global sdcard object.
+*/
+void debug(char* line){
+  if(field_mem[SD_CARD_OK]){
+    double t_stamp_sec = (double)get_microseconds() / 1000000.0;
+    snprintf(debug_buf, DEBUG_BUF_SIZE, "[%12.3f]: %s\n", t_stamp_sec, line);
+    file_append_line(&sdcard, debug_fname, debug_buf);
+  }
+}
+
+
+/**
+ * handy dandy function for writing a timestamped debug line over the UART3
+ * hardware uart port. Send a NULL line to flush the uart debug buffer.
+*/
+void debug_uart(char* line){
+  if(field_mem[DEBUG_MODE] == DEBUG_MODE_CONSOLE){
+
+    if(line != NULL){
+      double t_stamp_sec = (double)get_microseconds() / 1000000.0;
+      int add_size = snprintf(uart_scratch_buf, DEBUG_BUF_SIZE, "[%12.3f]: %s\r\n", t_stamp_sec, line);
+
+      // tack on this line to our debug buffer, if it will fit :)
+      if(uart_debug_buf_pos + add_size < UART_DEBUG_BUF_SIZE){
+        strcpy(uart_debug_buf + uart_debug_buf_pos, uart_scratch_buf);
+        uart_debug_buf_pos += add_size;
+      }
+    }
+
+    // can we transmit now? If so, do it starting from position 0.
+    if(huart3.gState == HAL_UART_STATE_READY){
+      uart_debug_tx_len = uart_debug_buf_pos;
+      HAL_UART_Transmit_DMA(&huart3, uart_debug_buf, uart_debug_tx_len);
+    }
+  }
+}
+
+
+/**
+ *
+*/
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart){
+  if(huart->Instance == USART3){
+    if(uart_debug_buf_pos > uart_debug_tx_len){
+      // user has appended stuff later in the buffer since last tx.
+      // So we need to start at uart_debug_tx_len and transmit up to
+      // uart_debug_buf_pos. Then it's safe to reset uart_debug_buf_pos = 0
+      int len = uart_debug_buf_pos - uart_debug_tx_len;
+      uart_debug_tx_len = uart_debug_buf_pos;
+      HAL_UART_Transmit_DMA(huart, uart_debug_buf + uart_debug_tx_len, len);
+    }else{
+      uart_debug_buf_pos = 0;
+    }
+  }
+}
+
+
+/**
  * Callback for handling completion of a UART receive operation
 */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
@@ -689,6 +846,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
     HAL_UART_Receive_DMA(&huart1, uart_rx_buf + uart_rx_ind, BODY_IND);
   }
 }
+
 
 /**
  * callback for TIMER interrupts
@@ -764,6 +922,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
     }
   }
 }
+
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
   if(GPIO_Pin == GPS_PPS_Pin){

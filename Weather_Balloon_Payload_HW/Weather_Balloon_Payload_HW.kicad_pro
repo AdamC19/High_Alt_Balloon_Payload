@@ -455,7 +455,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Weather_Balloon_Payload_HW.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

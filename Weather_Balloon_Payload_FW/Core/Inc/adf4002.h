@@ -24,7 +24,7 @@
 
 #define R_COUNTER_INIT_VAL      (0 | (1 << 2) | (1 << 17))
 #define N_COUNTER_INIT_VAL      (1 | (1 << 8))
-#define FUNCTION_LATCH_INIT_VAL (2 | (1 << 7) | (4 << 4) | (7 << 15) | (7 << 18))
+#define FUNCTION_LATCH_INIT_VAL (2 | (1 << 7) | (1 << 4) | (7 << 15) | (7 << 18))
 #define INIT_LATCH_INIT_VAL     (3 | (1 << 4))
 #define PAUSE_BRIEF()           __ASM("NOP\n NOP\n NOP\n NOP\n")
 

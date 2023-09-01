@@ -1,0 +1,3036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\cordi\OneDrive\Documents\GitHub\Weather_Balloon\External_Power_Amp\FET_Amplifier_HW\FET_Amplifier_HW.kicad_sch</source>
+    <date>7/29/2023 1:38:26 AM</date>
+    <tool>Eeschema 7.0.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>FET_Amplifier_HW.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>power.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>1000pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1000pF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C1588</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #">C1005NPO102JGT</field>
+        <field name="Mfr. Part #">CL10B102KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1000pF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C1588"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value="C1005NPO102JGT"/>
+      <property name="Mfr. Part #" value="CL10B102KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e6ffa11-2edd-4c91-b76a-53e1b7c08201</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>5.6pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 5.6pF 10% 50V NPO/C0G 0402</field>
+        <field name="JLCPCB Part #">C88895</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr. Part #">GJM1555C1H5R6CB01D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 5.6pF 10% 50V NPO/C0G 0402"/>
+      <property name="JLCPCB Part #" value="C88895"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr. Part #" value="GJM1555C1H5R6CB01D"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>49dc6364-31cd-4a5a-bff7-3c806a117574</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>12pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 12pF 10% 50V NPO/C0G 0402</field>
+        <field name="JLCPCB Part #">C106201</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">CC0402JRNPO9BN120</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 12pF 10% 50V NPO/C0G 0402"/>
+      <property name="JLCPCB Part #" value="C106201"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="CC0402JRNPO9BN120"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8fcdb1ea-7ea0-43f9-8d26-f4ed33b5a3f8</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>3.6pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 3.6pF 10% 50V NPO/C0G 0402</field>
+        <field name="JLCPCB Part #">C161321</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #"/>
+        <field name="Mfr. Part #">GJM1555C1H3R6WB01D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 3.6pF 10% 50V NPO/C0G 0402"/>
+      <property name="JLCPCB Part #" value="C161321"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value=""/>
+      <property name="Mfr. Part #" value="GJM1555C1H3R6WB01D"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab81b208-9416-4d66-91e1-78e3ddeba72e</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>1000pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1000pF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C1588</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #">C1005NPO102JGT</field>
+        <field name="Mfr. Part #">CL10B102KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1000pF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C1588"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value="C1005NPO102JGT"/>
+      <property name="Mfr. Part #" value="CL10B102KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>772228c3-eed0-4983-8351-d571a5718d7c</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C77020</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #">GRM155R71H104KE14D</field>
+        <field name="Mfr. Part #">GRM155R71H104KE14D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Mfr. Part #" value="GRM155R71H104KE14D"/>
+      <property name="JLCPCB Part #" value="C77020"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value="GRM155R71H104KE14D"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68828607-787e-45d5-aa17-edceb5fd5ea1</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C77020</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #">GRM155R71H104KE14D</field>
+        <field name="Mfr. Part #">GRM155R71H104KE14D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Mfr. Part #" value="GRM155R71H104KE14D"/>
+      <property name="JLCPCB Part #" value="C77020"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value="GRM155R71H104KE14D"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d8c4b62-5046-4af3-bff2-5e87f3e3b55d</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>1000pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1000pF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C1588</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #">C1005NPO102JGT</field>
+        <field name="Mfr. Part #">CL10B102KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1000pF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C1588"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value="C1005NPO102JGT"/>
+      <property name="Mfr. Part #" value="CL10B102KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4cf2b0b9-7a46-4dfb-b13d-29458503c3a6</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C77020</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #">GRM155R71H104KE14D</field>
+        <field name="Mfr. Part #">GRM155R71H104KE14D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Mfr. Part #" value="GRM155R71H104KE14D"/>
+      <property name="JLCPCB Part #" value="C77020"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value="GRM155R71H104KE14D"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04df5678-a623-4b14-bc66-65aa990f8005</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 10uF 50V 10% X7R 1210</field>
+        <field name="JLCPCB Part #">C386167</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Mfr. Part #">UMK325AB7106KM-T</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfr. Part #" value="UMK325AB7106KM-T"/>
+      <property name="JLCPCB Part #" value="C386167"/>
+      <property name="Manufacturer" value="Taiyo Yuden"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Description" value="CAP SMD 10uF 50V 10% X7R 1210"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>453e7e21-2b4d-4e73-9e78-5e54b5218591</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>6.8pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 6.8pF 10% 50V NP0/C0G 0603</field>
+        <field name="JLCPCB Part #">C1679</field>
+        <field name="Manufacturer">FH (Guangdong Fenghua Advanced Tech)</field>
+        <field name="Mfr Part #"/>
+        <field name="Mfr. Part #">0603CG6R8C500NT</field>
+        <field name="Package Desc">0603</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 6.8pF 10% 50V NP0/C0G 0603"/>
+      <property name="JLCPCB Part #" value="C1679"/>
+      <property name="Manufacturer" value="FH (Guangdong Fenghua Advanced Tech)"/>
+      <property name="Mfr Part #" value=""/>
+      <property name="Mfr. Part #" value="0603CG6R8C500NT"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>420a7ee9-37bb-46e9-900a-eaf0f9801765</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>100pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 100pF 10% 50V NP0/C0G 0603</field>
+        <field name="JLCPCB Part #">C14858</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #"/>
+        <field name="Mfr. Part #">CL10C101JB8NNNC</field>
+        <field name="Package Desc">0603</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 100pF 10% 50V NP0/C0G 0603"/>
+      <property name="JLCPCB Part #" value="C14858"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value=""/>
+      <property name="Mfr. Part #" value="CL10C101JB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fec6249b-1b39-43bd-bba8-319de5c75f4e</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>6.8pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 6.8pF 10% 50V NP0/C0G 0603</field>
+        <field name="JLCPCB Part #">C1679</field>
+        <field name="Manufacturer">FH (Guangdong Fenghua Advanced Tech)</field>
+        <field name="Mfr Part #"/>
+        <field name="Mfr. Part #">0603CG6R8C500NT</field>
+        <field name="Package Desc">0603</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 6.8pF 10% 50V NP0/C0G 0603"/>
+      <property name="JLCPCB Part #" value="C1679"/>
+      <property name="Manufacturer" value="FH (Guangdong Fenghua Advanced Tech)"/>
+      <property name="Mfr Part #" value=""/>
+      <property name="Mfr. Part #" value="0603CG6R8C500NT"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d5ba0bf8-4c23-48d0-bf03-7dbeb08dcca8</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 10uF 50V 10% X7R 1210</field>
+        <field name="JLCPCB Part #">C386167</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Mfr. Part #">UMK325AB7106KM-T</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfr. Part #" value="UMK325AB7106KM-T"/>
+      <property name="JLCPCB Part #" value="C386167"/>
+      <property name="Manufacturer" value="Taiyo Yuden"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Description" value="CAP SMD 10uF 50V 10% X7R 1210"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf85e59f-ed56-4228-8d3f-e8305b255423</tstamps>
+    </comp>
+    <comp ref="C30">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C77020</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #">GRM155R71H104KE14D</field>
+        <field name="Mfr. Part #">GRM155R71H104KE14D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Mfr. Part #" value="GRM155R71H104KE14D"/>
+      <property name="JLCPCB Part #" value="C77020"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value="GRM155R71H104KE14D"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>40fa8095-f121-4494-86ed-ad9ffafe3aa0</tstamps>
+    </comp>
+    <comp ref="C31">
+      <value>1000pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1000pF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C1588</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #">C1005NPO102JGT</field>
+        <field name="Mfr. Part #">CL10B102KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1000pF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C1588"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value="C1005NPO102JGT"/>
+      <property name="Mfr. Part #" value="CL10B102KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da0290ec-b053-43fb-8f68-dd14f733c95e</tstamps>
+    </comp>
+    <comp ref="C38">
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">16V 2.2uF X7S ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C2859193</field>
+        <field name="Manufacturer">SANYEAR</field>
+        <field name="Mfr. Part #">C0603X7S225K160NT</field>
+        <field name="Package Desc">0603</field>
+        <field name="Voltage Rating">16V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="16V"/>
+      <property name="Description" value="16V 2.2uF X7S ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="JLCPCB Part #" value="C2859193"/>
+      <property name="Manufacturer" value="SANYEAR"/>
+      <property name="Mfr. Part #" value="C0603X7S225K160NT"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e1f2975-0127-4001-9a3e-b5a959e5b788</tstamps>
+    </comp>
+    <comp ref="C39">
+      <value>1000pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1000pF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C1588</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #">C1005NPO102JGT</field>
+        <field name="Mfr. Part #">CL10B102KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1000pF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C1588"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value="C1005NPO102JGT"/>
+      <property name="Mfr. Part #" value="CL10B102KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30a24313-29a1-4001-a939-2cd1d9df054f</tstamps>
+    </comp>
+    <comp ref="C40">
+      <value>1000pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1000pF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C1588</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #">C1005NPO102JGT</field>
+        <field name="Mfr. Part #">CL10B102KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1000pF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C1588"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value="C1005NPO102JGT"/>
+      <property name="Mfr. Part #" value="CL10B102KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a155bf29-90c5-4553-8362-f52de6b9a9db</tstamps>
+    </comp>
+    <comp ref="C41">
+      <value>1000pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1000pF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C1588</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #">C1005NPO102JGT</field>
+        <field name="Mfr. Part #">CL10B102KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1000pF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C1588"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value="C1005NPO102JGT"/>
+      <property name="Mfr. Part #" value="CL10B102KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c998f19-1ca6-4d2f-b8ad-536ae5a80c97</tstamps>
+    </comp>
+    <comp ref="FB1">
+      <value>330@100MHz</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">70mΩ ±25% 330Ω@100MHz 0603 Ferrite Beads ROHS</field>
+        <field name="JLCPCB Part #">C710391</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr. Part #">BLM18SG331TZ1D</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="BLM18SG331TZ1D"/>
+      <property name="JLCPCB Part #" value="C710391"/>
+      <property name="Description" value="70mΩ ±25% 330Ω@100MHz 0603 Ferrite Beads ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa240ccd-e9d0-41f4-8c3b-86d04560efe3</tstamps>
+    </comp>
+    <comp ref="FB2">
+      <value>330@100MHz</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">70mΩ ±25% 330Ω@100MHz 0603 Ferrite Beads ROHS</field>
+        <field name="JLCPCB Part #">C710391</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr. Part #">BLM18SG331TZ1D</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="BLM18SG331TZ1D"/>
+      <property name="JLCPCB Part #" value="C710391"/>
+      <property name="Description" value="70mΩ ±25% 330Ω@100MHz 0603 Ferrite Beads ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0161704e-1bfc-4202-86aa-e99869b2a2dd</tstamps>
+    </comp>
+    <comp ref="FB3">
+      <value>330@100MHz</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">70mΩ ±25% 330Ω@100MHz 0603 Ferrite Beads ROHS</field>
+        <field name="JLCPCB Part #">C710391</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr. Part #">BLM18SG331TZ1D</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="BLM18SG331TZ1D"/>
+      <property name="JLCPCB Part #" value="C710391"/>
+      <property name="Description" value="70mΩ ±25% 330Ω@100MHz 0603 Ferrite Beads ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87e73fe5-6a62-4619-b381-2584a8396d77</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>M2.5</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5_Pad_Via</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ccd97d2d-9bf2-4256-8a19-e12164266b85</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>M2.5</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5_Pad_Via</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b2a1365-a11d-4aff-b138-256f80adebc7</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>M2.5</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5_Pad_Via</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07a503e5-1f9a-4099-a837-d946ff0cc2a6</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>M2.5</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5_Pad_Via</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole with connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>34ccdee7-252f-4920-88fe-62f97d5f4738</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_Coaxial</value>
+      <footprint>Repowered_Connectors:SMA_Amphenol_132384_EdgeMount</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19a5d395-09ba-4ed9-aa5f-855a44f9200a</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>MM8430-2610</value>
+      <footprint>Repowered_Connectors:Connector_Murata_MM8430-2610RA1</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Murata%20PDFs/Microwave_Coaxial_Conn_Cat030E.pdf</datasheet>
+      <fields>
+        <field name="Description">CONN SWD RCPT W/ SWITCH 50 OHM SMD</field>
+        <field name="JLCPCB Part #">C91634</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Mfr. Part #">MM8430-2610RB3</field>
+      </fields>
+      <libsource lib="Repowered_Devices" part="MM8430-2610" description="CONN, SWD Female Receptacle w/ switch, 50 OHM SMD"/>
+      <property name="Mfr. Part #" value="MM8430-2610RB3"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Description" value="CONN SWD RCPT W/ SWITCH 50 OHM SMD"/>
+      <property name="JLCPCB Part #" value="C91634"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="CONN, SWD Female Receptacle w/ switch, 50 OHM SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31219087-235e-47f0-b1b7-fdda8ce9ac5a</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_Coaxial</value>
+      <footprint>Repowered_Connectors:SMA_Amphenol_132384_EdgeMount</footprint>
+      <datasheet> ~</datasheet>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7eabc4ac-d9cf-46ff-a878-f4922ce50007</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>18nH</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C1332655</field>
+        <field name="Mfr. Part #">LQW18AN18NJ80D</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="LQW18AN18NJ80D"/>
+      <property name="JLCPCB Part #" value="C1332655"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3dd7ff5a-936a-418d-8b7c-546f6070de07</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>16nH</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C237581</field>
+        <field name="Mfr. Part #">LQW18AN16NG00D</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="LQW18AN16NG00D"/>
+      <property name="JLCPCB Part #" value="C237581"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69d1d409-c879-462d-9521-3c8eefa88fd6</tstamps>
+    </comp>
+    <comp ref="L3">
+      <value>180nH</value>
+      <footprint>Repowered_Inductors_SMD:L_Coilcraft_2222SQ-181</footprint>
+      <fields>
+        <field name="JLCPCB Part #"/>
+        <field name="Mfr. Part #">2222SQ-181GEC</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="2222SQ-181GEC"/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45a2a061-2d36-46ef-9892-28970db87863</tstamps>
+    </comp>
+    <comp ref="L4">
+      <value>180nH</value>
+      <footprint>Repowered_Inductors_SMD:L_Coilcraft_2222SQ-181</footprint>
+      <fields>
+        <field name="JLCPCB Part #"/>
+        <field name="Mfr. Part #">2222SQ-181GEC</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="2222SQ-181GEC"/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00254570-9106-461d-b981-ecb39ae5b0a2</tstamps>
+    </comp>
+    <comp ref="L5">
+      <value>10nH</value>
+      <footprint>Inductor_SMD:L_1008_2520Metric</footprint>
+      <fields>
+        <field name="Manufacturer">Coilcraft</field>
+        <field name="Mfr. Part #">1008CS-100XGLC</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="1008CS-100XGLC"/>
+      <property name="Manufacturer" value="Coilcraft"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a1da1ef1-7920-4111-8d32-593fd9d3a51e</tstamps>
+    </comp>
+    <comp ref="L6">
+      <value>180nH</value>
+      <footprint>Repowered_Inductors_SMD:L_Coilcraft_2222SQ-181</footprint>
+      <fields>
+        <field name="JLCPCB Part #"/>
+        <field name="Mfr. Part #">2222SQ-181GEC</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="2222SQ-181GEC"/>
+      <property name="JLCPCB Part #" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>85ee60d2-4d69-4af8-8f5d-3dcd49ab7277</tstamps>
+    </comp>
+    <comp ref="L9">
+      <value>120nH</value>
+      <footprint>Inductor_SMD:L_1008_2520Metric_Pad1.43x2.20mm_HandSolder</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C703706</field>
+        <field name="Mfr. Part #">LQW2UASR12G00L</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="LQW2UASR12G00L"/>
+      <property name="JLCPCB Part #" value="C703706"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4b414b22-2ab2-4166-acfd-b67630550ca4</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BLP15H9S100GZ</value>
+      <footprint>Repowered_TO-SOT-SMD:SOT-1483-1</footprint>
+      <fields>
+        <field name="Manufacturer">Ampleon USA Inc.</field>
+        <field name="Mfr. Part #">BLP15H9S100GZ</field>
+      </fields>
+      <libsource lib="Device" part="Q_NMOS_DGS" description="N-MOSFET transistor, drain/gate/source"/>
+      <property name="Manufacturer" value="Ampleon USA Inc."/>
+      <property name="Mfr. Part #" value="BLP15H9S100GZ"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="N-MOSFET transistor, drain/gate/source"/>
+      <property name="ki_keywords" value="transistor NMOS N-MOS N-MOSFET"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>beaf87c4-86d0-45ee-8d06-790ab102ab3c</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>49.9</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">RES SMD 49.9 1% 100mW 0603</field>
+        <field name="JLCPCB Part #">C23185</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Mfr. Part #">0603WAF499JT5E</field>
+        <field name="Package Desc">0603</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Description" value="RES SMD 49.9 1% 100mW 0603"/>
+      <property name="JLCPCB Part #" value="C23185"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Mfr. Part #" value="0603WAF499JT5E"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>756e1771-34a7-48cb-8ccb-5ab1f03c1872</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>0.0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C192909</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AF0603FR-070RL</field>
+        <field name="Package Desc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB Part #" value="C192909"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AF0603FR-070RL"/>
+      <property name="Description" value="100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18e39ac3-bb9c-4f63-b3db-83cbe303edfc</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1.0</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C144579</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AC0805FR-071RL</field>
+        <field name="Package Desc">0805</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0805"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AC0805FR-071RL"/>
+      <property name="JLCPCB Part #" value="C144579"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1da1bfc6-51b9-496c-8d02-cb341c537edd</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1.0</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C144579</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AC0805FR-071RL</field>
+        <field name="Package Desc">0805</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0805"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AC0805FR-071RL"/>
+      <property name="JLCPCB Part #" value="C144579"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79be4e45-4d0e-4562-ae1f-8e1f922dc809</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>0.0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C192909</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AF0603FR-070RL</field>
+        <field name="Package Desc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB Part #" value="C192909"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AF0603FR-070RL"/>
+      <property name="Description" value="100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2a922695-6930-4b28-b772-fc5ef0f447ad</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>0.0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C192909</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AF0603FR-070RL</field>
+        <field name="Package Desc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB Part #" value="C192909"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AF0603FR-070RL"/>
+      <property name="Description" value="100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>335707a3-16b9-4850-a9d7-acf061b83fb9</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>0.0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C192909</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AF0603FR-070RL</field>
+        <field name="Package Desc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB Part #" value="C192909"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AF0603FR-070RL"/>
+      <property name="Description" value="100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>64544bcd-a299-40ce-8fd7-831258951a5f</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>0.0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C192909</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AF0603FR-070RL</field>
+        <field name="Package Desc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB Part #" value="C192909"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AF0603FR-070RL"/>
+      <property name="Description" value="100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1cabfc1d-6693-4b99-b62c-5f00a2acd65e</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>0.0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C192909</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AF0603FR-070RL</field>
+        <field name="Package Desc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB Part #" value="C192909"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AF0603FR-070RL"/>
+      <property name="Description" value="100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83a5b7fd-93c4-4cb7-af52-fa66d0450328</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>1.8</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C384139</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Mfr. Part #">WR08X1R8JTL</field>
+        <field name="Package Desc">0805</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB Part #" value="C384139"/>
+      <property name="Manufacturer" value="Walsin Tech Corp"/>
+      <property name="Mfr. Part #" value="WR08X1R8JTL"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0805"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>25247001-826d-4628-8bcf-b7e18b3ea993</tstamps>
+    </comp>
+    <comp ref="RV1">
+      <value>10k</value>
+      <footprint>Potentiometer_SMD:Potentiometer_Bourns_3314G_Vertical</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C780220</field>
+        <field name="MFG">Bourns</field>
+        <field name="MFG_PN">3314G-1-103E</field>
+        <field name="Manufacturer">Bourns</field>
+        <field name="Mfr. Part #">3314G-1-103E</field>
+      </fields>
+      <libsource lib="Device" part="R_Potentiometer_US" description="Potentiometer, US symbol"/>
+      <property name="MFG_PN" value="3314G-1-103E"/>
+      <property name="MFG" value="Bourns"/>
+      <property name="JLCPCB Part #" value="C780220"/>
+      <property name="Manufacturer" value="Bourns"/>
+      <property name="Mfr. Part #" value="3314G-1-103E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="Potentiometer, US symbol"/>
+      <property name="ki_keywords" value="resistor variable"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b73ac862-4295-48c5-92be-31c543b10649</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f73330f1-7572-4a26-89dd-935b2ca84241</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08a1fb29-1488-4f7c-8a0f-43f6e8f6d11a</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>532f6562-0778-43f1-b618-8f0e6f8e2c12</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45f7f05d-d5b5-47ba-8030-a01afb976033</tstamps>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d27c6e64-cf69-47a9-8fe3-15ae2f2ef876</tstamps>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8e157e2-6a59-4029-a4b2-5e42885d2b10</tstamps>
+    </comp>
+    <comp ref="TP8">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4fc556f3-637a-4072-ac92-da9beaaf2c8a</tstamps>
+    </comp>
+    <comp ref="TP9">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>468bf4a2-290d-40e6-b774-0d76d9063cda</tstamps>
+    </comp>
+    <comp ref="TP11">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e2ce438-85fe-42cb-850b-f673c683b9cc</tstamps>
+    </comp>
+    <comp ref="TP12">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e0e44c85-3225-48a2-b7ec-68b52ec42276</tstamps>
+    </comp>
+    <comp ref="TP13">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9483f755-1d2f-4078-b662-879a730f4915</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>PGA-105</value>
+      <footprint>Package_TO_SOT_SMD:SOT-89-3</footprint>
+      <datasheet>https://www.minicircuits.com/pdfs/PGA-105+.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB Part #">C879859</field>
+        <field name="Mfr Part #">PGA-105+</field>
+      </fields>
+      <libsource lib="RF_Amplifier" part="PGA-105" description="40-2600MHz +15.1dB Low Noise Amplifier, SOT-89"/>
+      <property name="Mfr Part #" value="PGA-105+"/>
+      <property name="JLCPCB Part #" value="C879859"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="FET_Amplifier_HW.kicad_sch"/>
+      <property name="ki_description" value="40-2600MHz +15.1dB Low Noise Amplifier, SOT-89"/>
+      <property name="ki_keywords" value="RF amplifier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7823568a-9090-47a1-8146-d91c4fcf94b7</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C77020</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #">GRM155R71H104KE14D</field>
+        <field name="Mfr. Part #">GRM155R71H104KE14D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Mfr. Part #" value="GRM155R71H104KE14D"/>
+      <property name="JLCPCB Part #" value="C77020"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value="GRM155R71H104KE14D"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>b2d9ac4b-2f58-47a1-af86-a4fd18c9cf13</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>1000pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1000pF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C1588</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #">C1005NPO102JGT</field>
+        <field name="Mfr. Part #">CL10B102KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1000pF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C1588"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value="C1005NPO102JGT"/>
+      <property name="Mfr. Part #" value="CL10B102KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>54ddcd0f-713d-4775-9198-a09e9becb7b0</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C77020</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #">GRM155R71H104KE14D</field>
+        <field name="Mfr. Part #">GRM155R71H104KE14D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Mfr. Part #" value="GRM155R71H104KE14D"/>
+      <property name="JLCPCB Part #" value="C77020"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value="GRM155R71H104KE14D"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>c337e3cc-cbe4-4068-a9da-36fc3173f425</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 100pF 10% 50V NP0/C0G 0603</field>
+        <field name="JLCPCB Part #">C14858</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #"/>
+        <field name="Mfr. Part #">CL10C101JB8NNNC</field>
+        <field name="Package Desc">0603</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 100pF 10% 50V NP0/C0G 0603"/>
+      <property name="JLCPCB Part #" value="C14858"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value=""/>
+      <property name="Mfr. Part #" value="CL10C101JB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>1cdf2775-cf1e-43d3-9d74-710bb0ea64bc</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>0.022uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 22nF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C21122</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #"/>
+        <field name="Mfr. Part #">CL10B223KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 22nF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C21122"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value=""/>
+      <property name="Mfr. Part #" value="CL10B223KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>02536cd3-3acb-474a-b579-8a3d348dd7df</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C77020</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #">GRM155R71H104KE14D</field>
+        <field name="Mfr. Part #">GRM155R71H104KE14D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Mfr. Part #" value="GRM155R71H104KE14D"/>
+      <property name="JLCPCB Part #" value="C77020"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value="GRM155R71H104KE14D"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>3c770f51-b99f-470a-9833-de56187d779a</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 4.7UF 16V X5R 0805</field>
+        <field name="JLCPCB Part #">C1779</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #"/>
+        <field name="Mfr. Part #">CL21A475KAQNNNE</field>
+        <field name="Package Desc">0805</field>
+        <field name="Voltage Rating">16V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="16V"/>
+      <property name="Mfr. Part #" value="CL21A475KAQNNNE"/>
+      <property name="JLCPCB Part #" value="C1779"/>
+      <property name="Description" value="CAP CER 4.7UF 16V X5R 0805"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value=""/>
+      <property name="Package Desc" value="0805"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>6911c05d-feec-4b64-8a2d-1cf91f2a8fc7</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1uF 10% 50V X5R 0603</field>
+        <field name="JLCPCB Part #">C15849</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #"/>
+        <field name="Mfr. Part #">CL10A105KB8NNNC</field>
+        <field name="Package Desc">0805</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1uF 10% 50V X5R 0603"/>
+      <property name="JLCPCB Part #" value="C15849"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value=""/>
+      <property name="Mfr. Part #" value="CL10A105KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0805"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>d959ddd0-3c9c-4bcc-95d3-a2ab984bbab5</tstamps>
+    </comp>
+    <comp ref="C23">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 22uF 20% 25V X5R 1210</field>
+        <field name="JLCPCB Part #">C342660</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Mfr. Part #">C3225X7R1C226KT000N</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">25V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB Part #" value="C342660"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Mfr. Part #" value="C3225X7R1C226KT000N"/>
+      <property name="Voltage Rating" value="25V"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Description" value="CAP CER 22uF 20% 25V X5R 1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>a669afef-7524-4382-8535-4f3100aa131d</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>1000pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 1000pF 10% 50V X7R 0603</field>
+        <field name="JLCPCB Part #">C1588</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Mfr Part #">C1005NPO102JGT</field>
+        <field name="Mfr. Part #">CL10B102KB8NNNC</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Description" value="CAP SMD 1000pF 10% 50V X7R 0603"/>
+      <property name="JLCPCB Part #" value="C1588"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="Mfr Part #" value="C1005NPO102JGT"/>
+      <property name="Mfr. Part #" value="CL10B102KB8NNNC"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>3fee939c-c9cd-4aa7-ba4b-785f5f7ff970</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 22uF 20% 25V X5R 1210</field>
+        <field name="JLCPCB Part #">C342660</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Mfr. Part #">C3225X7R1C226KT000N</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">25V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB Part #" value="C342660"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Mfr. Part #" value="C3225X7R1C226KT000N"/>
+      <property name="Voltage Rating" value="25V"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Description" value="CAP CER 22uF 20% 25V X5R 1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>1b3a5c6e-8270-4188-8d4b-ffd9b04540f8</tstamps>
+    </comp>
+    <comp ref="C26">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 22uF 20% 25V X5R 1210</field>
+        <field name="JLCPCB Part #">C342660</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Mfr. Part #">C3225X7R1C226KT000N</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">25V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB Part #" value="C342660"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Mfr. Part #" value="C3225X7R1C226KT000N"/>
+      <property name="Voltage Rating" value="25V"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Description" value="CAP CER 22uF 20% 25V X5R 1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>ef3507a6-7d02-4799-ae6f-fa380ea7bbd6</tstamps>
+    </comp>
+    <comp ref="C27">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 22uF 20% 25V X5R 1210</field>
+        <field name="JLCPCB Part #">C342660</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Mfr. Part #">C3225X7R1C226KT000N</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">25V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB Part #" value="C342660"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Mfr. Part #" value="C3225X7R1C226KT000N"/>
+      <property name="Voltage Rating" value="25V"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Description" value="CAP CER 22uF 20% 25V X5R 1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>d62d9229-a263-4732-97f6-9e3855c4e61e</tstamps>
+    </comp>
+    <comp ref="C28">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 22uF 20% 25V X5R 1210</field>
+        <field name="JLCPCB Part #">C342660</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Mfr. Part #">C3225X7R1C226KT000N</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">25V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB Part #" value="C342660"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Mfr. Part #" value="C3225X7R1C226KT000N"/>
+      <property name="Voltage Rating" value="25V"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Description" value="CAP CER 22uF 20% 25V X5R 1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>a8ed680f-c150-434f-ba03-349896570c13</tstamps>
+    </comp>
+    <comp ref="C29">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 22uF 20% 25V X5R 1210</field>
+        <field name="JLCPCB Part #">C342660</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Mfr. Part #">C3225X7R1C226KT000N</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">25V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB Part #" value="C342660"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Mfr. Part #" value="C3225X7R1C226KT000N"/>
+      <property name="Voltage Rating" value="25V"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Description" value="CAP CER 22uF 20% 25V X5R 1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>175d4ae1-f90f-4265-8cca-b0c10ae1f9f7</tstamps>
+    </comp>
+    <comp ref="C32">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 22uF 20% 25V X5R 1210</field>
+        <field name="JLCPCB Part #">C342660</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Mfr. Part #">C3225X7R1C226KT000N</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">25V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB Part #" value="C342660"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Mfr. Part #" value="C3225X7R1C226KT000N"/>
+      <property name="Voltage Rating" value="25V"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Description" value="CAP CER 22uF 20% 25V X5R 1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>dcf10172-797a-4dcf-ab36-8cac7485ed5f</tstamps>
+    </comp>
+    <comp ref="C33">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C77020</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #">GRM155R71H104KE14D</field>
+        <field name="Mfr. Part #">GRM155R71H104KE14D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Mfr. Part #" value="GRM155R71H104KE14D"/>
+      <property name="JLCPCB Part #" value="C77020"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value="GRM155R71H104KE14D"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>004613a0-db62-47a0-9d92-2a04563a26c3</tstamps>
+    </comp>
+    <comp ref="C34">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 22uF 20% 25V X5R 1210</field>
+        <field name="JLCPCB Part #">C342660</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Mfr. Part #">C3225X7R1C226KT000N</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">25V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB Part #" value="C342660"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Mfr. Part #" value="C3225X7R1C226KT000N"/>
+      <property name="Voltage Rating" value="25V"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Description" value="CAP CER 22uF 20% 25V X5R 1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>9101b952-fbbb-4d31-949f-7198d22c4eda</tstamps>
+    </comp>
+    <comp ref="C35">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 22uF 20% 25V X5R 1210</field>
+        <field name="JLCPCB Part #">C342660</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="Mfr. Part #">C3225X7R1C226KT000N</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">25V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB Part #" value="C342660"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="Mfr. Part #" value="C3225X7R1C226KT000N"/>
+      <property name="Voltage Rating" value="25V"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Description" value="CAP CER 22uF 20% 25V X5R 1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>2274930b-0e1a-4a56-873d-c07782c21bb2</tstamps>
+    </comp>
+    <comp ref="C36">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="Description">CAP SMD 10uF 50V 10% X7R 1210</field>
+        <field name="JLCPCB Part #">C386167</field>
+        <field name="Manufacturer">Taiyo Yuden</field>
+        <field name="Mfr. Part #">UMK325AB7106KM-T</field>
+        <field name="Package Desc">1210</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Mfr. Part #" value="UMK325AB7106KM-T"/>
+      <property name="JLCPCB Part #" value="C386167"/>
+      <property name="Manufacturer" value="Taiyo Yuden"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Description" value="CAP SMD 10uF 50V 10% X7R 1210"/>
+      <property name="Package Desc" value="1210"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>7f8e473e-2b89-4aa7-87c1-2c108df9b2b8</tstamps>
+    </comp>
+    <comp ref="C37">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB Part #">C77020</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr Part #">GRM155R71H104KE14D</field>
+        <field name="Mfr. Part #">GRM155R71H104KE14D</field>
+        <field name="Package Desc">0402</field>
+        <field name="Voltage Rating">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Voltage Rating" value="50V"/>
+      <property name="Mfr. Part #" value="GRM155R71H104KE14D"/>
+      <property name="JLCPCB Part #" value="C77020"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Mfr Part #" value="GRM155R71H104KE14D"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>d0a290a7-7d2b-472c-980c-6c1215467290</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>SS54SMA</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="Description">40V 550mV@3A 5A SMA Schottky</field>
+        <field name="JLCPCB Part #">C511853</field>
+        <field name="Mfr. Part #">SS54SMA</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Mfr. Part #" value="SS54SMA"/>
+      <property name="JLCPCB Part #" value="C511853"/>
+      <property name="Description" value="40V 550mV@3A 5A SMA Schottky"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>40f2da4e-1c8d-4e6c-bf67-13d92186caee</tstamps>
+    </comp>
+    <comp ref="FB4">
+      <value>330@100MHz</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">70mΩ ±25% 330Ω@100MHz 0603 Ferrite Beads ROHS</field>
+        <field name="JLCPCB Part #">C710391</field>
+        <field name="Manufacturer">Murata Electronics</field>
+        <field name="Mfr. Part #">BLM18SG331TZ1D</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="BLM18SG331TZ1D"/>
+      <property name="JLCPCB Part #" value="C710391"/>
+      <property name="Description" value="70mΩ ±25% 330Ω@100MHz 0603 Ferrite Beads ROHS"/>
+      <property name="Manufacturer" value="Murata Electronics"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>b9086721-b414-4a19-82f7-d6c5983bf7fe</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>22f83bad-2644-45b1-b09a-e831b5023367</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>JST-XH</value>
+      <footprint>Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>ea715c76-982a-4f42-a8ff-c2cbdc4c9694</tstamps>
+    </comp>
+    <comp ref="L7">
+      <value>10uH</value>
+      <footprint>Inductor_SMD:L_Sunlord_MWSA0624S</footprint>
+      <fields>
+        <field name="Current Rating">3.1A (4A sat.)</field>
+        <field name="JLCPCB Part #">C408435</field>
+        <field name="Manufacturer">Sunlord</field>
+        <field name="Mfr. Part #">MWSA0624S-100MT</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="MWSA0624S-100MT"/>
+      <property name="Manufacturer" value="Sunlord"/>
+      <property name="JLCPCB Part #" value="C408435"/>
+      <property name="Current Rating" value="3.1A (4A sat.)"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>bcffa148-8ecd-451d-b390-c2f0a91e9694</tstamps>
+    </comp>
+    <comp ref="L8">
+      <value>4.7uH</value>
+      <footprint>Inductor_SMD:L_Sunlord_SWPA4018S</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C60117</field>
+        <field name="Manufacturer">Sunlord</field>
+        <field name="Mfr. Part #">SWPA4018S4R7MT</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Mfr. Part #" value="SWPA4018S4R7MT"/>
+      <property name="Manufacturer" value="Sunlord"/>
+      <property name="JLCPCB Part #" value="C60117"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>0ac25a8b-5eb4-4284-85da-5098e3183698</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>DMN3023L</value>
+      <footprint>Repowered_TO-SOT-SMD:SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/DMN3023L.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="DMG1012T" description="20V Vds, 0.63 Id, N-Channel MOSFET with ESD protection, SOT-523"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="20V Vds, 0.63 Id, N-Channel MOSFET with ESD protection, SOT-523"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>21ad1d52-3b88-4103-834e-a451c3fc2f48</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>Si2302</value>
+      <footprint>Repowered_TO-SOT-SMD:SOT-23</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C2891732</field>
+        <field name="Manufacturer">YONGYUTAI</field>
+        <field name="Mfr. Part #">SI2302</field>
+      </fields>
+      <libsource lib="Device" part="Q_NMOS_GSD" description="N-MOSFET transistor, gate/source/drain"/>
+      <property name="JLCPCB Part #" value="C2891732"/>
+      <property name="Manufacturer" value="YONGYUTAI"/>
+      <property name="Mfr. Part #" value="SI2302"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="N-MOSFET transistor, gate/source/drain"/>
+      <property name="ki_keywords" value="transistor NMOS N-MOS N-MOSFET"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>a917b20e-09b1-4df1-8fc9-749fd24c28ce</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>DMP2035U-7</value>
+      <footprint>Repowered_TO-SOT-SMD:SOT-23</footprint>
+      <fields>
+        <field name="Description">MOSFET P-CH 20V 3.6A SOT23-3</field>
+        <field name="JLCPCB Part #">C443825</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="Mfr. Part #">DMP2035U-7</field>
+      </fields>
+      <libsource lib="Device" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
+      <property name="Mfr. Part #" value="DMP2035U-7"/>
+      <property name="Description" value="MOSFET P-CH 20V 3.6A SOT23-3"/>
+      <property name="JLCPCB Part #" value="C443825"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="P-MOSFET transistor, gate/source/drain"/>
+      <property name="ki_keywords" value="transistor PMOS P-MOS P-MOSFET"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>742fbb40-8940-4fe9-8775-204802f1f4e8</tstamps>
+    </comp>
+    <comp ref="Q5">
+      <value>DMN3023L</value>
+      <footprint>Repowered_TO-SOT-SMD:SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/DMN3023L.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="DMG1012T" description="20V Vds, 0.63 Id, N-Channel MOSFET with ESD protection, SOT-523"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="20V Vds, 0.63 Id, N-Channel MOSFET with ESD protection, SOT-523"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>923d722b-2412-40ab-a74e-326bc67cfc3d</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C25104</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Mfr. Part #">0402WGF3300TCE</field>
+        <field name="Package Desc">0402</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Mfr. Part #" value="0402WGF3300TCE"/>
+      <property name="JLCPCB Part #" value="C25104"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>0f95a826-5db4-4bbf-b303-b99f21e3363b</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C11702</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Mfr. Part #">0402WGF1001TCE</field>
+        <field name="Package Desc">0402</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Mfr. Part #" value="0402WGF1001TCE"/>
+      <property name="JLCPCB Part #" value="C11702"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>e5c84f92-3f83-4682-94c7-6bde94634a3b</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">62.5mW Thick Film Resistors ±0.5% 10.2kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C303730</field>
+        <field name="Manufacturer">RALEC</field>
+        <field name="Mfr. Part #">RTT021022DTH</field>
+        <field name="Package Desc">0402</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Description" value="62.5mW Thick Film Resistors ±0.5% 10.2kΩ 0402 Chip Resistor - Surface Mount ROHS"/>
+      <property name="JLCPCB Part #" value="C303730"/>
+      <property name="Manufacturer" value="RALEC"/>
+      <property name="Mfr. Part #" value="RTT021022DTH"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>b39bde86-46fc-420f-b92b-4eef05c81a59</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>330</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C25104</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Mfr. Part #">0402WGF3300TCE</field>
+        <field name="Package Desc">0402</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Mfr. Part #" value="0402WGF3300TCE"/>
+      <property name="JLCPCB Part #" value="C25104"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>2d62f6c8-a67d-4dde-b59e-a73dfab27360</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>24.9k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C138027</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">RC0402FR-0724K9L</field>
+        <field name="Package Desc">0402</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="RC0402FR-0724K9L"/>
+      <property name="JLCPCB Part #" value="C138027"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>ad506cc4-6cb8-4340-8846-c66e07bbc6c5</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">62.5mW Thick Film Resistors ±0.5% 10.2kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C303730</field>
+        <field name="Manufacturer">RALEC</field>
+        <field name="Mfr. Part #">RTT021022DTH</field>
+        <field name="Package Desc">0402</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Description" value="62.5mW Thick Film Resistors ±0.5% 10.2kΩ 0402 Chip Resistor - Surface Mount ROHS"/>
+      <property name="JLCPCB Part #" value="C303730"/>
+      <property name="Manufacturer" value="RALEC"/>
+      <property name="Mfr. Part #" value="RTT021022DTH"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>a3751696-ac4f-4302-90df-0ef24cc05574</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>7.5k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C25918</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Mfr. Part #">0402WGF7501TCE</field>
+        <field name="Package Desc">0402</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Mfr. Part #" value="0402WGF7501TCE"/>
+      <property name="JLCPCB Part #" value="C25918"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>299c366e-84c3-48d1-83fb-cd84b7e6d247</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">62.5mW Thick Film Resistors ±0.5% 10.2kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C303730</field>
+        <field name="Manufacturer">RALEC</field>
+        <field name="Mfr. Part #">RTT021022DTH</field>
+        <field name="Package Desc">0402</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Description" value="62.5mW Thick Film Resistors ±0.5% 10.2kΩ 0402 Chip Resistor - Surface Mount ROHS"/>
+      <property name="JLCPCB Part #" value="C303730"/>
+      <property name="Manufacturer" value="RALEC"/>
+      <property name="Mfr. Part #" value="RTT021022DTH"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>44a67ed7-2b50-4900-8125-3c8d7a9e6e59</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>0.0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C192909</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AF0603FR-070RL</field>
+        <field name="Package Desc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB Part #" value="C192909"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AF0603FR-070RL"/>
+      <property name="Description" value="100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>cf3d72b3-8a3d-4d8a-94f7-d703a1b1a982</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>0.005</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C163091</field>
+        <field name="Manufacturer">TA-I Tech</field>
+        <field name="Mfr. Part #">RLM10FTSMR005</field>
+        <field name="Package Desc">0805</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0805"/>
+      <property name="Manufacturer" value="TA-I Tech"/>
+      <property name="Mfr. Part #" value="RLM10FTSMR005"/>
+      <property name="JLCPCB Part #" value="C163091"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>6e53d9ea-fc80-41fc-a3bf-dc375136f1a9</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="JLCPCB Part #">C25741</field>
+        <field name="Manufacturer">UNI-ROYAL(Uniroyal Elec)</field>
+        <field name="Mfr. Part #">0402WGF1003TCE</field>
+        <field name="Package Desc">0402</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Package Desc" value="0402"/>
+      <property name="Manufacturer" value="UNI-ROYAL(Uniroyal Elec)"/>
+      <property name="Mfr. Part #" value="0402WGF1003TCE"/>
+      <property name="JLCPCB Part #" value="C25741"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>4ceb4e8d-fe78-4b8d-a0a1-f99363fe3a23</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>0.0</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB Part #">C192909</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Mfr. Part #">AF0603FR-070RL</field>
+        <field name="Package Desc">0603</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="JLCPCB Part #" value="C192909"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Mfr. Part #" value="AF0603FR-070RL"/>
+      <property name="Description" value="100mW ±1% 0Ω 0603 Chip Resistor - Surface Mount ROHS"/>
+      <property name="Package Desc" value="0603"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>cce11145-db7f-4dea-a0ec-b1f5307be3ef</tstamps>
+    </comp>
+    <comp ref="TP5">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>6f2957cd-a589-4517-b57f-0f252948d85b</tstamps>
+    </comp>
+    <comp ref="TP10">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>2a22fb1a-5a7e-40f5-b115-45cbd7b020da</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>AP9101CK6</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AP9101C.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB Part #">C151339</field>
+        <field name="Mfr. Part #">AP9101CK6-ADTRG1</field>
+      </fields>
+      <libsource lib="Battery_Management" part="AP9101CK6" description="Li+ Battery Protection IC for Single Cell Pack, SOT-23-6"/>
+      <property name="Mfr. Part #" value="AP9101CK6-ADTRG1"/>
+      <property name="JLCPCB Part #" value="C151339"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="Li+ Battery Protection IC for Single Cell Pack, SOT-23-6"/>
+      <property name="ki_keywords" value="battery protection li-ion li-po"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>b02544a8-93e5-4a3a-b710-0dd932df9980</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>LT3759xMSE</value>
+      <footprint>Package_SO:MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm</footprint>
+      <fields>
+        <field name="Description">IC, Mult. Topology Power Controller, Wide Vin</field>
+        <field name="MFG_PN">LT3759EMSE#TRPBF</field>
+        <field name="Mfr. Part #">LT3759EMSE#TRPBF</field>
+      </fields>
+      <libsource lib="Analog_Devices" part="LT3759" description="IC, Mult. Topology Power Controller, Wide Vin"/>
+      <property name="Mfr. Part #" value="LT3759EMSE#TRPBF"/>
+      <property name="MFG_PN" value="LT3759EMSE#TRPBF"/>
+      <property name="Description" value="IC, Mult. Topology Power Controller, Wide Vin"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="IC, Mult. Topology Power Controller, Wide Vin"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>a0156774-7edc-4f8d-bbe0-09dd8830c889</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>AP63205WU-7</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23-6</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB Part #">C2071056</field>
+        <field name="Mfr. Part #">AP63205WU-7</field>
+      </fields>
+      <libsource lib="Regulator_Switching" part="AP63205WU" description="2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"/>
+      <property name="Mfr. Part #" value="AP63205WU-7"/>
+      <property name="JLCPCB Part #" value="C2071056"/>
+      <property name="Sheetname" value="Power Conversion"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_description" value="2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6"/>
+      <property name="ki_keywords" value="2A Buck DC/DC"/>
+      <sheetpath names="/Power Conversion/" tstamps="/d431e0f5-ce6f-4b32-832e-269c3808045a/"/>
+      <tstamps>6f5f8737-2d62-4269-b69c-9eb887e39e94</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Analog_Devices" part="LT3759">
+      <description>IC, Mult. Topology Power Controller, Wide Vin</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LT3759xMSE</field>
+        <field name="Footprint">Package_SO:MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm</field>
+        <field name="Mfr. Part #">LT3759EMSE#TRPBF</field>
+        <field name="MFG_PN">LT3759EMSE#TRPBF</field>
+        <field name="Description">IC, Mult. Topology Power Controller, Wide Vin</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VC" type="passive"/>
+        <pin num="2" name="FBX" type="passive"/>
+        <pin num="3" name="SS" type="passive"/>
+        <pin num="4" name="RT" type="passive"/>
+        <pin num="5" name="SYNC" type="passive"/>
+        <pin num="6" name="~{PGOOD}" type="passive"/>
+        <pin num="7" name="SENSE" type="passive"/>
+        <pin num="8" name="GATE" type="passive"/>
+        <pin num="9" name="INTVCC" type="passive"/>
+        <pin num="10" name="DRIVE" type="passive"/>
+        <pin num="11" name="VIN" type="passive"/>
+        <pin num="12" name="EN/UVLO" type="passive"/>
+        <pin num="13" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Battery_Management" part="AP9101CK6">
+      <description>Li+ Battery Protection IC for Single Cell Pack, SOT-23-6</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AP9101C.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP9101CK6</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AP9101C.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DO" type="output"/>
+        <pin num="2" name="VM" type="passive"/>
+        <pin num="3" name="CO" type="output"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_Coaxial">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)</description>
+      <docs> ~</docs>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+        <fp>*LEMO*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_Coaxial</field>
+        <field name="Datasheet"> ~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="NetTie_2">
+      <description>Net tie, 2 pins</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Net*Tie*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">NT</field>
+        <field name="Value">NetTie_2</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_DGS">
+      <description>N-MOSFET transistor, drain/gate/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_DGS</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GSD">
+      <description>N-MOSFET transistor, gate/source/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GSD</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_PMOS_GSD">
+      <description>P-MOSFET transistor, gate/source/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_GSD</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Potentiometer_US">
+      <description>Potentiometer, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_Potentiometer_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="RF_Amplifier" part="PGA-105">
+      <description>40-2600MHz +15.1dB Low Noise Amplifier, SOT-89</description>
+      <docs>https://www.minicircuits.com/pdfs/PGA-105+.pdf</docs>
+      <footprints>
+        <fp>SOT?89*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PGA-105</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-89-3</field>
+        <field name="Datasheet">https://www.minicircuits.com/pdfs/PGA-105+.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="AP63205WU">
+      <description>2A, 1.1MHz Buck DC/DC Converter, fixed 5.0V output voltage, TSOT-23-6</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf</docs>
+      <footprints>
+        <fp>TSOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP63205WU</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-6</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="input"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="IN" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SW" type="output"/>
+        <pin num="6" name="BST" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Repowered_Devices" part="MM8430-2610">
+      <description>CONN, SWD Female Receptacle w/ switch, 50 OHM SMD</description>
+      <docs>https://media.digikey.com/pdf/Data%20Sheets/Murata%20PDFs/Microwave_Coaxial_Conn_Cat030E.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">MM8430-2610</field>
+        <field name="Footprint">Repowered_Connectors:Connector_Murata_MM8430-2610RA1</field>
+        <field name="Datasheet">https://media.digikey.com/pdf/Data%20Sheets/Murata%20PDFs/Microwave_Coaxial_Conn_Cat030E.pdf</field>
+        <field name="MFG_PN">MM8430-2610RA1</field>
+        <field name="MFG">Murata</field>
+        <field name="Description">CONN SWD RCPT W/ SWITCH 50 OHM SMD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="passive"/>
+        <pin num="2" name="OUT" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="DMG1012T">
+      <description>20V Vds, 0.63 Id, N-Channel MOSFET with ESD protection, SOT-523</description>
+      <docs>https://www.diodes.com/assets/Datasheets/ds31783.pdf</docs>
+      <footprints>
+        <fp>SOT?523*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">DMG1012T</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-523</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/ds31783.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Analog_Devices">
+      <uri>C:/Users/cordi/OneDrive/Documents/Repowered_KiCAD_Libraries/Analog_Devices.kicad_sym</uri>
+    </library>
+    <library logical="Battery_Management">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Battery_Management.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="RF_Amplifier">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/RF_Amplifier.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Regulator_Switching.kicad_sym</uri>
+    </library>
+    <library logical="Repowered_Devices">
+      <uri>C:/Users/cordi/OneDrive/Documents/Repowered_KiCAD_Libraries/Repowered_Devices.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Transistor_FET.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/BIAS">
+      <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="2" name="/BIAS_FILT">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="FB1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="3" name="/COAX_TP_IN">
+      <node ref="J4" pin="1" pinfunction="IN" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="4" name="/C_DAMP">
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/FET_DRAIN">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="L3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="D" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="6" name="/FET_GATE">
+      <node ref="J4" pin="2" pinfunction="OUT" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="G" pintype="input"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="7" name="/FET_PWR_FILT">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="FB2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="FB3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="L3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="8" name="/IN_FILT_FINAL">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/IN_FILT_LC">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="10" name="/OUT_FILT_1">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="L4" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="11" name="/OUT_FILT_2">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="L4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="L5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="L6" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="12" name="/OUT_FILT_3">
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="L6" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="13" name="/Power Conversion/BATT_GND">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="VSS" pintype="power_in"/>
+    </net>
+    <net code="14" name="/Power Conversion/BOOST_CS">
+      <node ref="Q5" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="/Power Conversion/BOOST_DRV">
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="DRIVE" pintype="passive"/>
+    </net>
+    <net code="16" name="/Power Conversion/BOOST_EN">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="EN/UVLO" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="17" name="/Power Conversion/BOOST_FB">
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="FBX" pintype="passive"/>
+    </net>
+    <net code="18" name="/Power Conversion/BOOST_GATE">
+      <node ref="Q5" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="U2" pin="8" pinfunction="GATE" pintype="passive"/>
+    </net>
+    <net code="19" name="/Power Conversion/BOOST_ISNS">
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="SENSE" pintype="passive"/>
+    </net>
+    <net code="20" name="/Power Conversion/BOOST_PG">
+      <node ref="U2" pin="6" pinfunction="~{PGOOD}" pintype="passive+no_connect"/>
+    </net>
+    <net code="21" name="/Power Conversion/BOOST_RT">
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="RT" pintype="passive"/>
+    </net>
+    <net code="22" name="/Power Conversion/BOOST_SS">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="SS" pintype="passive"/>
+    </net>
+    <net code="23" name="/Power Conversion/BOOST_SW">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="L7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q5" pin="3" pinfunction="D" pintype="passive"/>
+    </net>
+    <net code="24" name="/Power Conversion/BOOST_VCOMP">
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="VC" pintype="passive"/>
+    </net>
+    <net code="25" name="/Power Conversion/BOOST_VIN">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="L7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="VIN" pintype="passive"/>
+    </net>
+    <net code="26" name="/Power Conversion/BUCK_BST">
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="BST" pintype="passive"/>
+    </net>
+    <net code="27" name="/Power Conversion/BUCK_FB">
+      <node ref="U3" pin="1" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="28" name="/Power Conversion/BUCK_SW">
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="L8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="SW" pintype="output"/>
+    </net>
+    <net code="29" name="/Power Conversion/BUCK_VIN">
+      <node ref="C36" pin="2" pintype="passive"/>
+      <node ref="C37" pin="1" pintype="passive"/>
+      <node ref="FB4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="30" name="/Power Conversion/INTVCC">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="INTVCC" pintype="passive"/>
+    </net>
+    <net code="31" name="/Power Conversion/PROT_CO">
+      <node ref="U1" pin="3" pinfunction="CO" pintype="output+no_connect"/>
+    </net>
+    <net code="32" name="/Power Conversion/PROT_DO">
+      <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="U1" pin="1" pinfunction="DO" pintype="output"/>
+    </net>
+    <net code="33" name="/Power Conversion/PROT_VDD">
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="34" name="/Power Conversion/PROT_VM">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="VM" pintype="passive"/>
+    </net>
+    <net code="35" name="/Power Conversion/VC_RC">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="36" name="/Power Conversion/VIN_EXT">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="37" name="/Power Conversion/VIN_SW_G">
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="38" name="/Power Conversion/VIN_SW_NFET_D">
+      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="39" name="/RF_AMP_IN">
+      <node ref="C41" pin="1" pintype="passive"/>
+      <node ref="U4" pin="1" pintype="input"/>
+    </net>
+    <net code="40" name="/RF_AMP_OUT">
+      <node ref="C40" pin="2" pintype="passive"/>
+      <node ref="L9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U4" pin="3" pintype="output"/>
+    </net>
+    <net code="41" name="/RF_IN">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C40" pin="1" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="42" name="/RF_IN_EXT">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="In" pintype="passive"/>
+    </net>
+    <net code="43" name="/RF_OUT_EXT">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="In" pintype="passive"/>
+    </net>
+    <net code="44" name="/TEE_ATTN">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="45" name="/TEE_ATTN_IN">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="46" name="/TEE_OUT">
+      <node ref="C41" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+    </net>
+    <net code="47" name="/V-VCC_BIAS">
+      <node ref="C30" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="RV1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="48" name="BOOST_VOUT">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="C28" pin="1" pintype="passive"/>
+      <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="C32" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="FB2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="FB3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="FB4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="49" name="GND">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C28" pin="2" pintype="passive"/>
+      <node ref="C29" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C30" pin="2" pintype="passive"/>
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="C32" pin="2" pintype="passive"/>
+      <node ref="C34" pin="2" pintype="passive"/>
+      <node ref="C35" pin="2" pintype="passive"/>
+      <node ref="C36" pin="1" pintype="passive"/>
+      <node ref="C37" pin="2" pintype="passive"/>
+      <node ref="C38" pin="2" pintype="passive"/>
+      <node ref="C39" pin="1" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="J1" pin="2" pinfunction="Ext" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J4" pin="3" pinfunction="GND" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Ext" pintype="passive"/>
+      <node ref="L5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="RV1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="GND" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="SYNC" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="50" name="Net-(C38-Pad1)">
+      <node ref="C38" pin="1" pintype="passive"/>
+      <node ref="C39" pin="2" pintype="passive"/>
+      <node ref="L9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+    </net>
+    <net code="51" name="V-5P0">
+      <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="C35" pin="1" pintype="passive"/>
+      <node ref="L8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="52" name="unconnected-(U1-NC-Pad4)">
+      <node ref="U1" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

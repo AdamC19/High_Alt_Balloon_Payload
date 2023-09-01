@@ -428,7 +428,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Antenna_Impedance_Match.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
